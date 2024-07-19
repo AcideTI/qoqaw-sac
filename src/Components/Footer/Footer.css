@@ -1,0 +1,83 @@
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+.footer-container {
+  background-color: #eb5e25;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.footer-title {
+  font-size: 1.5em; /* Aumenta el tamaño de la letra */
+  font-weight: bold; /* Opcional: hace que el texto sea negrita */
+}
+
+.footer-links {
+  margin: 20px 0;
+}
+
+.footer-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.footer-form {
+  margin: 20px 0;
+}
+
+.footer-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.footer-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.footer-form button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #000000;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.footer-form button:hover {
+  background-color: #0056b3;
+}
+.footer-icons {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.footer-icons a {
+  margin: 0 10px;
+  color: white;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+.footer-icons a:hover {
+  color: #007bff;
+}
+.footer-column p{
+    margin-bottom: 10px;
+}

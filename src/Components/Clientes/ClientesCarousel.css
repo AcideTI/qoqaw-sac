@@ -1,0 +1,57 @@
+.carrousel-section {
+  text-align: center;
+  margin: 5rem auto;
+  width: 95vw;
+  font-size: 1rem;
+}
+.container-clientes {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 40vh;
+  justify-content: center;
+  padding-bottom: 4rem;
+  margin-bottom: 4rem;
+}
+
+.container-clientes img {
+  width: 200px;
+  height: auto;
+  filter: grayscale(100%);
+  transition: all 0.5s;
+}
+.container-clientes img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.2);
+}
+
+.container-clientes .clientes-info {
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  transition: all 1s;
+}
+.container-clientes:hover .clientes-info {
+  opacity: 1;
+}
+.slider-carrousel {
+  margin: 5rem auto;
+}
+.carrousel-section .btn {
+  background: #eb5e25;
+  color: #fff;
+  padding: 14px 25px;
+  font-size: 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 61px;
+  width: 180px;
+}
+.carrousel-section .btn:hover {
+  background-color: #000000;
+}

@@ -1,0 +1,41 @@
+.ubication-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background: #ffffff;
+}
+
+.ubication-content {
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+}
+
+.ubication-text {
+  flex: 1;
+  margin-right: 70px; 
+  margin-bottom: 60px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.6; 
+}
+
+.ubication-map {
+  flex: 2; 
+  max-width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ubication-text h1 {
+  font-size: 60px;
+  font-weight: 500;
+}
+.ubication-text p {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }

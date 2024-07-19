@@ -1,0 +1,28 @@
+.misionvision-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+  }
+  
+  .misionvision-column {
+    flex: 1 1 300px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .misionvision-image-column {
+    flex: 0 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .misionvision-central-image {
+    width: auto;
+    height: 200px;
+    border-radius: 10px;
+  }

@@ -1,0 +1,74 @@
+.programs {
+  margin: 6.5rem 0;
+  justify-content: center;
+  padding:0 10rem;
+  display: flex;
+  flex-direction: column; /* Asegura que el texto esté encima de las imágenes */
+  align-items: center;
+  gap: 20px; /* Espacio entre los títulos y las imágenes */
+}
+
+.programs h1 {
+  margin-top: 10px;
+  font-size: 60px;
+  margin-bottom: 20px; /* Espacio entre el texto y las imágenes */
+  text-align: center;
+  color: #eb5e25;
+  font-weight: 500;
+}
+
+.programs-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.program {
+  flex-basis: 240px; /* Ajusta el ancho de cada programa para que quepan 5 en una fila */
+  margin-bottom: 20px; /* Añade un margen inferior para el espaciado vertical */
+  position: relative;
+  overflow: hidden; /* Oculta el contenido que se sale del contenedor */
+  border-radius: 10px;
+}
+
+.program img {
+  width: 100%;
+  height: 250px; /* Ajusta la altura según tus necesidades */
+  object-fit: cover;
+  mask-image: url("../../assets/blob.svg"); /* Añade la máscara */
+  mask-repeat: no-repeat;
+  display: flex;
+  transition: transform 0.3s; /* Añade una transición suave */
+  justify-content: center;
+}
+.program-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Añade un fondo oscuro */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Oculta el contenido */
+  transition: opacity 0.8s; /* Añade una transición suave */
+  mask-image: url("../../assets/blob.svg"); /* Añade la máscara */
+  mask-repeat: no-repeat;
+
+}
+.program-info h2 {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.program:hover .program-info {
+  opacity: 1; /* Muestra el contenido al pasar el ratón por encima */
+}
+.program-info i {
+  color: white;
+  font-size: 2rem;
+  margin-top: 10px;
+}

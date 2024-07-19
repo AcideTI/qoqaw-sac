@@ -1,0 +1,58 @@
+.marketing-digital-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 0;
+  animation: marketig-digital-animation 1.5s;
+}
+
+@media (width <= 1250px) {
+  .marketing-digital-container {
+    grid-template-columns: 1fr; /* Una sola columna */
+    grid-template-rows: 1fr 1fr;
+    row-gap: 40px;
+    justify-items: center;
+  }
+}
+
+.marketing-digital-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centrar verticalmente */
+  text-align: left; /* Alinear el texto a la izquierda */
+}
+
+.marketing-digital-image {
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+}
+
+.marketing-digital-image img {
+  width: 500px; /* Asegurar que la imagen no exceda el ancho del contenedor */
+  height: auto; /* Mantener la proporción de la imagen */
+  border-radius: 25px;
+}
+.marketing-digital-text h1 {
+  margin-top: 10px;
+  font-size: 60px;
+  margin-bottom: 20px; /* Espacio entre el texto y las imágenes */
+  color: #eb5e25;
+  font-weight: 500;
+}
+.marketing-digital-text p {
+  margin-top: 20px;
+  font-size: 18px;
+  margin-bottom: 20px; /* Espacio entre el texto y las imágenes */
+  color: #5b5d63;
+  font-weight: 300;
+}
+@keyframes marketig-digital-animation {
+  from {
+    transform: translateY(100px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

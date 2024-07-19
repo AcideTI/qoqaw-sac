@@ -1,0 +1,86 @@
+.contacto-inicio-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+@media (width <= 1250px) {
+  .contacto-inicio-container {
+    grid-template-columns: 1fr; /* Una sola columna */
+    grid-template-rows: 1fr 1fr;
+    row-gap: 40px;
+    justify-items: center;
+  }
+}
+.contacto-inicio-info h1 {
+  font-size: 60px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+.contacto-inicio-info p {
+  font-size: 20px;
+  font-weight: 300;
+  color: #56585e;
+  margin-bottom: 30px;
+}
+
+.contacto-inicio-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centrar verticalmente */
+}
+
+.contacto-inicio-info > * {
+  text-align: left; /* Alinear el texto a la izquierda */
+  width: 100%; /* Asegurar que los elementos ocupen todo el ancho */
+}
+
+.contacto-inicio-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacto-inicio-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacto-inicio-form label {
+  margin-bottom: 10px;
+  font-size: 17px;
+  font-weight: 300;
+  width: 100%; /* Asegurar que los labels ocupen todo el ancho */
+  text-align: left;
+}
+
+.contacto-inicio-form input,
+.contacto-inicio-form textarea {
+  width: 599px;
+  height: 59px;
+  padding: 10px;
+  font-size: 17px;
+  font-weight: 300;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+
+}
+
+.contacto-inicio-form .btn-contact {
+  background: #eb5e25;
+  color: #fff;
+  padding: 14px 25px;
+  font-size: 19px;
+  font-weight: 300;
+  border-radius: 25px;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  display: inline-flex;
+  height: 55px;
+  width: 200px;
+}
+
+.contacto-inicio-form .btn-contact:hover {
+  background-color: #000000;
+}
