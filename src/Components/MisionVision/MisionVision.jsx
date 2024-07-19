@@ -4,6 +4,7 @@ import "./MisionVision.css";
 const MisionVision = () => {
   return (
     <div className="misionvision-container">
+        
       <div className="misionvision-column">
         <h1>Acerca de Nosotros</h1>
         <p>
@@ -20,7 +21,7 @@ const MisionVision = () => {
       </div>
 
       <div className="misionvision-column">
-        <h1>Misión</h1>
+        <h2>Misión</h2>
         <p>
           Brindar soluciones de estrategias de marketing y publicidad a las
           MYPES para mejorar sus ventas y comercialización, a través del
@@ -28,7 +29,7 @@ const MisionVision = () => {
           tendencias y comportamientos del mercado; generando así, mayores
           beneficios para nuestros clientes.
         </p>
-        <h1>Visión</h1>
+        <h2>Visión</h2>
         <p>
           Al 2024 ser un CITE de Marketing y publicidad líder en procesos de
           venta y comercialización a nivel sur del país, generando mayor valor

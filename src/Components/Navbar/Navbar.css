@@ -45,8 +45,12 @@ nav ul li {
 }
 
 .social-icons a:hover {
-  color: #007bff; 
+  color: #eb5e25; 
 }
 .link.selected {
   border-bottom: 1px solid #212121;
 }
+.container li:hover {
+  border-bottom: 1px solid #212121;
+}
+
