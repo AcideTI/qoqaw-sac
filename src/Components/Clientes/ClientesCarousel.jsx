@@ -86,7 +86,7 @@ const ClientesCarousel = () => {
       </Slider>
       </div>
 
-      <Link to="/" className="btn">Ver más</Link>
+      <Link to="/proyectos" className="btn">Ver más</Link>
     </div>
   );
 };

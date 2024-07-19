@@ -34,7 +34,6 @@ const Navbar = () => {
   }, [pathname]);
   return (
     <>
-      <RoutesPages />
 
       <nav className="container">
         <SocialMedia />

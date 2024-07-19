@@ -1,6 +1,6 @@
 .hero {
   width: 100%;
-  min-height: 100vh;
+  min-height: 800px;
   background:
     url("../../assets/hero1.jpg");
   background-size: cover;
@@ -8,6 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 .form-container {
   background: #fff;
@@ -66,7 +67,7 @@
 .hero-text h1 {
   font-size: 60px;
   font-weight: 600;
-  margin-top: 80px;
+  color: #eb5f28;
 }
 .hero-text p {
   max-width: 700px;

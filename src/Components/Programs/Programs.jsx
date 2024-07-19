@@ -10,12 +10,12 @@ import Subtitle from '../common/Subtitle';
 const ItemsPrograms = [
   {
     img: program_1,
-    alt: "Marketing",
+    alt: "Marketing Digital",
     icon: "fa-solid fa-globe",
   },
   {
     img: program_2,
-    alt: "Branding",
+    alt: "Branding & Diseño",
     icon: "fa-regular fa-folder",
   },
   {
@@ -30,7 +30,7 @@ const ItemsPrograms = [
   },
   {
     img: program_5,
-    alt: "Plan",
+    alt: "Plan de Marketing",
     icon: "fa-solid fa-square-poll-horizontal",
   },
 ];
