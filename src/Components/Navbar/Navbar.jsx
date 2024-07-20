@@ -1,8 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
-import logo from "../../assets/logo1.png";
+import logo from "../../assets/logo1.webp";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import RoutesPages from "../../routes/routes";
 import SocialMedia from "./SocialMedia";
 import { useEffect } from "react";
 const ItemsNavBar = [
@@ -30,7 +29,6 @@ const Navbar = () => {
   useEffect(() => {
     // Top of the page
     window.scrollTo(0, 0);
-    console.log("Page");
   }, [pathname]);
   return (
     <>

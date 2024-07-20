@@ -1,6 +1,6 @@
 import React from 'react';
 import './MarketingDigital.css';
-import marketingdigital from '../../assets/digital-marketing1.jpg';
+import marketingdigital from '../../assets/digital-marketing1.webp';
 
 const MarketingDigital = () => {
   return (

@@ -11,6 +11,15 @@
   gap: 5rem; /* Sin espacio entre las tarjetas */
 }
 
+@media (width <= 1250px) {
+  .image-grid {
+    grid-template-columns: 1fr 1fr; /* Una sola columna */
+    grid-template-rows: 1fr 1fr;
+    row-gap: 40px;
+    justify-items: center;
+  }
+}
+
 .card {
   position: relative; /* Necesario para posicionar el rectángulo */
   display: flex;
@@ -25,6 +34,7 @@
   width: 100%;
   height: 100%;
   object-fit: contain; /* Asegura que las imágenes se muestren completas dentro de las tarjetas */
+  transition: transform 0.8s ease; /* Transición suave para el efecto de subir */
 }
 
 .card .overlay {
@@ -39,7 +49,27 @@
   transition: bottom 0.8s ease; /* Transición suave */
 }
 
+.card .second-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transform: translateY(100%); /* Inicialmente oculta fuera de la vista */
+  transition: transform 0.8s ease; /* Transición suave para el efecto de subida */
+}
+
+.card:hover img {
+  transform: translateY(-100%); /* Sube la imagen */
+}
+
+.card:hover .second-image {
+  transform: translateY(0%); /* Sube la segunda imagen */
+}
+
 .card:hover .overlay {
-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   bottom: 0; /* Muestra el rectángulo al hacer hover */
 }
