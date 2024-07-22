@@ -15,7 +15,7 @@ const Inicio = () => {
         <h1>Soluciones <br />Digitales, Éxitos <br />Reales</h1>
         <p>Haz crecer tu marca con nosotros</p>
         <div className="button-container-overlay">
-          <button className="transparent-button">Descubre</button>
+          <Link to="/servicios" className="transparent-button">Descubre</Link>
           <Link to="/contacto" className="transparent-button">Contacta</Link>
         </div>
       </div>

@@ -28,11 +28,6 @@ const ItemsPrograms = [
     alt: "Investigación",
     icon: "fa-solid fa-ranking-star",
   },
-  {
-    img: program_5,
-    alt: "Plan de Marketing",
-    icon: "fa-solid fa-square-poll-horizontal",
-  },
 ];
 
 const DesarrolloSoftware = () => {

@@ -16,6 +16,7 @@ import acide from "../../assets/clientes/acide.webp";
 import cariluis_p from "../../assets/clientes/cariluis-p.webp";
 import acide_p from "../../assets/clientes/acide-p.webp";
 import camara_p from "../../assets/clientes/camara-p.webp";
+import volta_p from "../../assets/clientes/volta-p.webp";
 import Subtitle from "../common/Subtitle";
 import { Link } from "react-router-dom";
 
@@ -31,7 +32,7 @@ const ProyectosClientes = () => {
     { src: diamond, alt: "Diamond Silver", secondSrc: cariluis_p },
     { src: sky, alt: "Sky Viajes y Turismo", secondSrc: cariluis_p },
     { src: biomab, alt: "Biomab", secondSrc: cariluis_p },
-    { src: volta, alt: "Colegio Alessandro Volta", secondSrc: cariluis_p },
+    { src: volta, alt: "Colegio Alessandro Volta", secondSrc: volta_p },
     { src: agro, alt: "Agro Industrias Marsa", secondSrc: cariluis_p },
     { src: sullca, alt: "Sullca", secondSrc: cariluis_p },
   ];
