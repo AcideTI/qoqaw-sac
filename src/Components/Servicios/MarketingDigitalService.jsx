@@ -11,27 +11,27 @@ const ItemsPrograms = [
   {
     img: community,
     alt: "Community Manager",
-    icon: "fa-solid fa-globe",
+    icon: "fa-solid fa-signal",
   },
   {
     img: social,
     alt: "Social Media",
-    icon: "fa-regular fa-folder",
+    icon: "fa-regular fa-thumbs-up",
   },
   {
     img: seo,
     alt: "Posicionamiento SEO",
-    icon: "fa-solid fa-code",
+    icon: "fa-solid fa-magnifying-glass",
   },
   {
     img: growth,
     alt: "Growth Hacking",
-    icon: "fa-solid fa-ranking-star",
+    icon: "fa-solid fa-magnifying-glass-chart",
   },
   {
     img: publicidad,
     alt: "Publicidad Digital",
-    icon: "fa-solid fa-square-poll-horizontal",
+    icon: "fa-solid fa-bullhorn",
   },
 ];
 const MarketingDigitalService = () => {

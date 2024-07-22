@@ -6,8 +6,8 @@ import Aos from "aos";
 const ItemProgram = ({ item }) => {
   useEffect(() => {
     Aos.init({
-      duration: 1100, // Duración de la animación en milisegundos
-      once: false, // Permite que la animación se repita más de una vez
+      duration: 650, // Duración de la animación en milisegundos
+      once: true, // Permite que la animación se repita más de una vez
     });
   }, []);
   

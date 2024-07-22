@@ -1,32 +1,31 @@
 import React from 'react'
 import "./Servicios.css";
-import program_1 from "../../assets/marketing.webp";
-import program_2 from "../../assets/branding.webp";
-import program_3 from "../../assets/software.webp";
-import program_4 from "../../assets/investigacion.webp";
-import program_5 from "../../assets/plan.webp";
+import tienda from "../../assets/desarrollo-software/tienda.webp";
+import web from "../../assets/desarrollo-software/web.webp";
+import software from "../../assets/desarrollo-software/software.webp";
+import erp from "../../assets/desarrollo-software/erp.webp";
 import Subtitle from "../common/Subtitle";
 import ItemProgram from "../Programs/ItemProgram";
 const ItemsPrograms = [
   {
-    img: program_1,
-    alt: "Marketing Digital",
-    icon: "fa-solid fa-globe",
+    img: tienda,
+    alt: "Tiendas Virtuales",
+    icon: "fa-solid fa-cart-shopping",
   },
   {
-    img: program_2,
-    alt: "Branding & Diseño",
-    icon: "fa-regular fa-folder",
+    img: web,
+    alt: "Páginas Web",
+    icon: "fa-solid fa-laptop-code",
   },
   {
-    img: program_3,
+    img: software,
     alt: "Software",
     icon: "fa-solid fa-code",
   },
   {
-    img: program_4,
-    alt: "Investigación",
-    icon: "fa-solid fa-ranking-star",
+    img: erp,
+    alt: "ERP",
+    icon: "fa-solid fa-sitemap",
   },
 ];
 

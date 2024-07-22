@@ -1,37 +1,37 @@
 import React from 'react'
 import "./Servicios.css";
-import program_1 from "../../assets/marketing.webp";
-import program_2 from "../../assets/branding.webp";
-import program_3 from "../../assets/software.webp";
-import program_4 from "../../assets/investigacion.webp";
-import program_5 from "../../assets/plan.webp";
+import brading from "../../assets/brading-disenio/branding.webp";
+import material from "../../assets/brading-disenio/material.webp";
+import packaging from "../../assets/brading-disenio/packaging.webp";
+import identidad from "../../assets/brading-disenio/identidad.webp";
+import disenio from "../../assets/brading-disenio/disenio.webp";
 import Subtitle from "../common/Subtitle";
 import ItemProgram from "../Programs/ItemProgram";
 const ItemsPrograms = [
   {
-    img: program_1,
-    alt: "Marketing Digital",
-    icon: "fa-solid fa-globe",
+    img: brading,
+    alt: "Branding",
+    icon: "fa-solid fa-arrow-up-right-dots",
   },
   {
-    img: program_2,
-    alt: "Branding & Diseño",
-    icon: "fa-regular fa-folder",
+    img: material,
+    alt: "Material Publicitario",
+    icon: "fa-solid fa-shirt",
   },
   {
-    img: program_3,
-    alt: "Software",
-    icon: "fa-solid fa-code",
+    img: packaging,
+    alt: "Packaging",
+    icon: "fa-solid fa-box",
   },
   {
-    img: program_4,
-    alt: "Investigación",
-    icon: "fa-solid fa-ranking-star",
+    img: identidad,
+    alt: "Identidad",
+    icon: "fa-solid fa-users",
   },
   {
-    img: program_5,
-    alt: "Plan de Marketing",
-    icon: "fa-solid fa-square-poll-horizontal",
+    img: disenio,
+    alt: "Diseño UX/UI",
+    icon: "fa-solid fa-compass-drafting",
   },
 ];
 
