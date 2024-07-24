@@ -18,6 +18,7 @@ const ItemsPrograms = [
     img: social,
     alt: "Social Media",
     icon: "fa-regular fa-thumbs-up",
+    ref: "/servicios/socialmedia",
   },
   {
     img: seo,

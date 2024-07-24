@@ -59,8 +59,8 @@
 }
 
 .plan-community-card-back {
-  background-color: #fff; /* Fondo negro para la parte trasera */
-  border: #eb5e25;
+  background-color: #fff; /* Fondo blanco para la parte trasera */
+  border-radius: 15px; /* Bordes redondeados */
   transform: rotateY(180deg);
   display: flex;
   justify-content: center; /* Centrar horizontalmente */
@@ -74,6 +74,7 @@
   height: 100%;
   object-fit: cover; /* Asegura que las imágenes se muestren completas dentro de las tarjetas */
   transition: transform 0.8s ease; /* Transición suave para el efecto de subir */
+  border-radius: 15px; /* Bordes redondeados */
 }
 
 .plan-community-back-content h2 {
