@@ -1,3 +1,4 @@
+/* ContactoInicio.css */
 .contacto-inicio-container {
   display: grid;
   grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
@@ -5,7 +6,8 @@
   margin: 0 auto;
   padding: 40px 0;
 }
-@media (width <= 1250px) {
+
+@media (max-width: 1250px) {
   .contacto-inicio-container {
     grid-template-columns: 1fr; /* Una sola columna */
     grid-template-rows: 1fr 1fr;
@@ -13,11 +15,13 @@
     justify-items: center;
   }
 }
+
 .contacto-inicio-info h1 {
   font-size: 60px;
   font-weight: 500;
   margin-bottom: 50px;
 }
+
 .contacto-inicio-info p {
   font-size: 20px;
   font-weight: 300;
@@ -63,7 +67,6 @@
   font-weight: 300;
   border: 1px solid #ccc;
   border-radius: 10px;
-
 }
 
 .contacto-inicio-form .btn-contact {
@@ -83,4 +86,48 @@
 
 .contacto-inicio-form .btn-contact:hover {
   background-color: #000000;
+}
+
+.success-message {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-out {
+  animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+.fade-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

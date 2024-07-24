@@ -8,14 +8,13 @@ const FormularioContacto = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_q0kkmtd', 'template_drtwonp', form.current, 'Kpe9ELspeBx9V6e-A')
+      .sendForm('service_q0kkmtd', 'template_gq0hv4z', form.current, 'Kpe9ELspeBx9V6e-A')
       .then(
         () => {
-          console.log('SUCCESS!');
-          console.log('message sent');
+          alert('¡Mensaje enviado con éxito!');
         },
         (error) => {
-          console.log('FAILED...', error.text);
+          alert('Error al enviar el mensaje: ' + error.text);
         }
       );
   };
