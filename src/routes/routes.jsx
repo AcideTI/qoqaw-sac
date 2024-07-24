@@ -4,6 +4,7 @@ import HomePage from "../pages/home";
 import NosotrosPage from "../pages/nosotros";
 import ProyectosPage from "../pages/proyectos";
 import ServiciosPage from "../pages/servicios";
+import CommunityManagerPage from "../pages/communitymanager";
 
 const RoutesPages = () => {
   return (
@@ -13,6 +14,7 @@ const RoutesPages = () => {
         <Route path="/contacto" element={<Contacto />} />
         <Route path="/proyectos" element={<ProyectosPage />} />
         <Route path="/servicios" element={<ServiciosPage />} />
+        <Route path="/servicios/communitymanager" element={<CommunityManagerPage />} />
       </Routes>
   );
 };

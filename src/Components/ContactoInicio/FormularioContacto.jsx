@@ -1,8 +1,15 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 
 const FormularioContacto = () => {
   const form = useRef();
+
+  useEffect(() => {
+    const yearInput = document.getElementById('year');
+    if (yearInput) {
+      yearInput.value = new Date().getFullYear();
+    }
+  }, []);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -33,6 +40,7 @@ const FormularioContacto = () => {
         <label htmlFor="mensaje">Mensaje</label>
         <textarea id="mensaje" name="mensaje" placeholder="Ingrese su mensaje aquí"></textarea>
       </div>
+      <input type="hidden" id="year" name="year" />
       <button type="submit" className="btn-contact">
         Enviar mensaje
       </button>

@@ -12,6 +12,7 @@ const ItemsPrograms = [
     img: community,
     alt: "Community Manager",
     icon: "fa-solid fa-signal",
+    ref: "/servicios/communitymanager",
   },
   {
     img: social,
