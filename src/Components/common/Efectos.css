@@ -1,0 +1,28 @@
+.rotating-icon {
+    display: inline-block;
+    animation: rotate 2s infinite;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(-15deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+    75% {
+      transform: rotate(15deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  .positioned-icon {
+    position: absolute;
+    left: 1330px;
+    top: 293px;
+  }

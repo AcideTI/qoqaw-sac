@@ -2,6 +2,7 @@ import React from "react";
 import ServiciosIncluidosSocial from "../Components/SocialMedia/ServiciosIncluidosSocial";
 import GrowthHacking from "../Components/GrowthHacking/GrowthHacking";
 import publicity from "../assets/marketing-digital/publicity.webp";
+import '../Components/common/Efectos.css'; // Asegúrate de importar el archivo CSS correcto
 
 const contenido = {
   subtitle: "Publicidad Digital",
@@ -16,9 +17,11 @@ const contenido = {
     "Creatividad y Estrategia",
   ],
 };
+
 const PublicidadDigitalPage = () => {
   return (
     <div>
+      <i className="fa-solid fa-bolt rotating-icon positioned-icon"></i>
       <GrowthHacking
         subtitle={contenido.subtitle}
         heading={contenido.heading}
