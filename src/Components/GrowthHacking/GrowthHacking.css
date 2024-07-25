@@ -1,0 +1,65 @@
+.growth-hacking-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .growth-hacking-text h2 {
+    font-size: 25px;
+    color: #000000;
+  }
+  
+  .growth-hacking-text-content p {
+    margin-top: 10px;
+    font-size: 19px;
+    font-weight: 300;
+    color: #707277;
+    margin-bottom: 10px;
+  }
+  
+  .growth-hacking-content {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    padding: 1rem;
+    gap: 5rem; /* Aumentar el gap entre columnas */
+  }
+  
+  @media (max-width: 1250px) {
+    .growth-hacking-content {
+      grid-template-columns: 1fr; /* Una sola columna */
+      grid-template-rows: 1fr 1fr;
+      row-gap: 40px;
+      justify-items: center;
+    }
+  }
+  
+  .growth-hacking-text-content {
+    text-align: justify;
+    max-width: 400px;
+  }
+  
+  .growth-hacking-image {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .growth-hacking-image img {
+    max-width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    transition: transform 0.5s ease-in-out; /* Transición suave */
+  }
+  
+  .growth-hacking-image img:hover {
+    transform: scale(1.1);
+  }
+  

@@ -30,11 +30,13 @@ const ItemsPrograms = [
     img: growth,
     alt: "Growth Hacking",
     icon: "fa-solid fa-magnifying-glass-chart",
+    ref: "/servicios/growthhacking",
   },
   {
     img: publicidad,
     alt: "Publicidad Digital",
     icon: "fa-solid fa-bullhorn",
+    ref: "/servicios/publicidaddigital",
   },
 ];
 const MarketingDigitalService = () => {

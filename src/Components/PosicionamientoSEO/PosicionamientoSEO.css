@@ -27,6 +27,14 @@
   align-items: center;
   gap: 8rem; /* Aumentar el gap entre columnas */
 }
+@media (max-width: 1250px) {
+  .posicionamiento-seo-content {
+    grid-template-columns: 1fr; /* Una sola columna */
+    grid-template-rows: 1fr 1fr;
+    row-gap: 40px;
+    justify-items: center;
+  }
+}
 
 .posicionamiento-seo-text {
   text-align: justify;

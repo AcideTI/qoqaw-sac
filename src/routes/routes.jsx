@@ -7,6 +7,8 @@ import ServiciosPage from "../pages/servicios";
 import CommunityManagerPage from "../pages/communitymanager";
 import SocialMediaPage from "../pages/socialmedia";
 import PosicionamientoSEOPage from "../pages/posicionamientoseo";
+import GrowthHackingPage from "../pages/growthhacking";
+import PublicidadDigitalPage from "../pages/publicidaddigital";
 
 const RoutesPages = () => {
   return (
@@ -19,6 +21,8 @@ const RoutesPages = () => {
         <Route path="/servicios/communitymanager" element={<CommunityManagerPage />} />
         <Route path="/servicios/socialmedia" element={<SocialMediaPage />} />
         <Route path="/servicios/posicionamientoseo" element={<PosicionamientoSEOPage />} />
+        <Route path="/servicios/growthhacking" element={<GrowthHackingPage />} />
+        <Route path="/servicios/publicidaddigital" element={<PublicidadDigitalPage />} />
       </Routes>
   );
 };
