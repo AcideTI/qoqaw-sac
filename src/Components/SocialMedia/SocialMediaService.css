@@ -1,0 +1,135 @@
+.social-media-container {
+  margin: 1rem 0;
+  justify-content: center;
+  padding: 0 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-media-container h2 {
+  font-size: 25px;
+  color: #000000;
+}
+
+.social-media-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  padding: 10px;
+  align-items: center;
+}
+@media (max-width: 1250px) {
+  .social-media-columns {
+    grid-template-columns: 1fr; /* Una sola columna */
+    grid-template-rows: 1fr 1fr;
+    row-gap: 40px;
+    justify-items: center;
+  }
+}
+
+.social-media-left {
+  padding: 20px;
+}
+
+.social-media-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.social-media-image {
+  max-width: 100%;
+  height: 350px;
+  border-radius: 10px;
+}
+
+.social-media-left h3 {
+  font-size: 19px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.social-media-left p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: 250;
+  color: #1d1e20;
+}
+
+.social-media-right .icon {
+  position: absolute;
+  font-size: 2.7rem;
+  color: #eb5d25e5;
+  opacity: 0;
+  animation: rise 5s infinite;
+}
+
+@keyframes rise {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+.icon:nth-child(2) {
+  left: 10%;
+  top: 15%;
+  animation-delay: 0s;
+}
+
+.icon:nth-child(3) {
+  left: 60%;
+  top: 15%;
+  animation-delay: 4s;
+}
+.icon:nth-child(4) {
+  left: 30%;
+  top: 65%;
+  animation-delay: 3s;
+}
+
+.icon:nth-child(5) {
+  left: 84%;
+  top: 75%;
+  animation-delay: 1s;
+}
+
+.icon:nth-child(6) {
+  left: 17%;
+  top: 57%;
+  animation-delay: 2s;
+}
+
+.icon:nth-child(7) {
+  left: 75%;
+  top: 10%;
+  animation-delay: 3s;
+}
+
+.icon:nth-child(8) {
+  left: 71%;
+  top: 45%;
+  animation-delay: 2s;
+}
+
+.icon:nth-child(9) {
+  left: 86%;
+  top: 35%;
+  animation-delay: 0s;
+}
+
+.icon:nth-child(10) {
+  left: 8%;
+  top: 87%;
+  animation-delay: 1s;
+}

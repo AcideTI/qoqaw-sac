@@ -1,9 +1,9 @@
 import React from 'react';
-import './SocialMedia.css';
+import './SocialMediaService.css';
 import Subtitle from '../common/Subtitle';
-import socialmedia from '../../assets/social-media/socialmedia.webp';
+import socialmedia from '../../assets/social-media/socialmedia-transformed1.webp';
 
-const SocialMedia = () => {
+const SocialMediaService = () => {
   return (
     <div className='social-media-container'>
       <Subtitle text="Social Media" />
@@ -31,4 +31,4 @@ const SocialMedia = () => {
   );
 };
 
-export default SocialMedia;
+export default SocialMediaService;

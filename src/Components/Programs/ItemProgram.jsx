@@ -34,26 +34,9 @@ const ItemProgram = ({ item }) => {
 
   const { img, alt, icon, ref } = item;
 
-  // Usar srcset para cargar diferentes tamaños de imagen dependiendo de la resolución de la pantalla
-  const srcSet = `
-    ${img}-240w.webp 240w,
-    ${img}-480w.webp 480w,
-    ${img}-800w.webp 800w
-  `;
-
-  const sizes = `
-    (max-width: 480px) 240px,
-    (max-width: 800px) 480px,
-    800px
-  `;
-
   return (
     <Link to={ref} className="program" ref={programRef}>
-      <picture>
-        <source srcSet={srcSet} sizes={sizes} type="image/webp" />
-        <source srcSet={srcSet.replace(/webp/g, 'jpg')} sizes={sizes} type="image/jpeg" />
-        <img src={`${img}-240w.jpg`} alt={alt} className="program-img" loading="lazy" />
-      </picture>
+      <img src={img} alt={alt} className="program-img" loading="lazy" />
       <div className="program-info">
         <h2>{alt}</h2>
         <i className={icon}></i>
