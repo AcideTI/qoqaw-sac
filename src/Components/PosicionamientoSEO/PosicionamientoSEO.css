@@ -1,0 +1,68 @@
+.posicionamiento-seo-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.posicionamiento-seo-container h2 {
+  font-size: 25px;
+  color: #000000;
+}
+.posicionamiento-seo-text p {
+  margin-top: 10px;
+  font-size: 19px;
+  font-weight: 300;
+  color: #707277;
+  margin-bottom: 10px;
+}
+
+.posicionamiento-seo-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Reducir el ancho de la columna de texto */
+  padding: 2rem;
+  align-items: center;
+  gap: 8rem; /* Aumentar el gap entre columnas */
+}
+
+.posicionamiento-seo-text {
+  text-align: justify;
+  max-width: 400px;
+}
+
+.posicionamiento-seo-card {
+  position: relative;
+  overflow: hidden; /* Asegura que la imagen no se salga del card */
+  border-radius: 10px;
+  padding: 10px;
+  background-image: url("../../assets/posicionamientoseo/stars.webp");
+  background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+  background-position: center; /* Centra la imagen de fondo */
+  width: 400px;
+}
+
+.posicionamiento-seo-image {
+  position: relative;
+  height: 200px;
+}
+
+.posicionamiento-seo-image img {
+  height: 100%;
+  border-radius: 10px;
+  animation: rocket-launch 5s infinite; /* Añadir animación */
+}
+
+@keyframes rocket-launch {
+  0% {
+    transform: translateY(100%); /* Comienza desde el borde inferior */
+  }
+  50% {
+    transform: translateY(65px); /* Llega al centro */
+  }
+  100% {
+    transform: translateY(100%); /* Vuelve al borde inferior */
+  }
+}

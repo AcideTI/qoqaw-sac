@@ -24,6 +24,7 @@ const ItemsPrograms = [
     img: seo,
     alt: "Posicionamiento SEO",
     icon: "fa-solid fa-magnifying-glass",
+    ref: "/servicios/posicionamientoseo",
   },
   {
     img: growth,
