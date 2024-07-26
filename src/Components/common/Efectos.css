@@ -1,28 +1,56 @@
+.positioned-icon {
+  position: absolute;
+  color: #ffb62d;
+  font-size: 22px;
+}
+
+.icon-1 {
+  left: 1090px;
+  top: 330px;
+  color: #eb5e25;
+}
+
+.icon-2 {
+  left: 1120px;
+  top: 340px;
+}
+
+.icon-3 {
+  left: 1080px;
+  top: 300px;
+
+}
+
+.icon-4 {
+  left: 1140px;
+  top: 310px;
+  color: #eb5e25;
+}
+
+.icon-5 {
+  left: 1115px;
+  top: 305px;
+  color: #57595a
+}
+
 .rotating-icon {
-    display: inline-block;
-    animation: rotate 2s infinite;
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(-40deg);
   }
-  
-  @keyframes rotate {
-    0% {
-      transform: rotate(0deg);
-    }
-    25% {
-      transform: rotate(-15deg);
-    }
-    50% {
-      transform: rotate(0deg);
-    }
-    75% {
-      transform: rotate(15deg);
-    }
-    100% {
-      transform: rotate(0deg);
-    }
+  25% {
+    transform: rotate(-48deg);
   }
-  
-  .positioned-icon {
-    position: absolute;
-    left: 1330px;
-    top: 293px;
+  50% {
+    transform: rotate(-40deg);
   }
+  75% {
+    transform: rotate(-48deg);
+  }
+  100% {
+    transform: rotate(-40deg);
+  }
+}

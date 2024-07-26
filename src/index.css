@@ -39,6 +39,14 @@ a{
     color: #eb5e25;
     font-weight: 500;
 }
+.branding-digital-page .subtitle{
+  color: #000000;
+  font-size: 65px;
+}
+.material-publictario-page .subtitle{
+  color: #56585e;
+  font-size: 70px;
+}
 .section-container{
   display: flex;
   gap: 40px;

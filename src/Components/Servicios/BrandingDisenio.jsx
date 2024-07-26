@@ -12,11 +12,13 @@ const ItemsPrograms = [
     img: brading,
     alt: "Branding",
     icon: "fa-solid fa-arrow-up-right-dots",
+    ref: "/servicios/branding",
   },
   {
     img: material,
     alt: "Material Publicitario",
     icon: "fa-solid fa-shirt",
+    ref: "/servicios/materialpublicitario",
   },
   {
     img: packaging,

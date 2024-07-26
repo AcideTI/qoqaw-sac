@@ -9,6 +9,8 @@ import SocialMediaPage from "../pages/socialmedia";
 import PosicionamientoSEOPage from "../pages/posicionamientoseo";
 import GrowthHackingPage from "../pages/growthhacking";
 import PublicidadDigitalPage from "../pages/publicidaddigital";
+import BrandingDgitalPage from "../pages/brandingdigital";
+import MaterialPublicitarioPage from "../pages/materialpublicitario";
 
 const RoutesPages = () => {
   return (
@@ -23,6 +25,8 @@ const RoutesPages = () => {
         <Route path="/servicios/posicionamientoseo" element={<PosicionamientoSEOPage />} />
         <Route path="/servicios/growthhacking" element={<GrowthHackingPage />} />
         <Route path="/servicios/publicidaddigital" element={<PublicidadDigitalPage />} />
+        <Route path="/servicios/branding" element={<BrandingDgitalPage />} />
+        <Route path="/servicios/materialpublicitario" element={<MaterialPublicitarioPage />} />
       </Routes>
   );
 };

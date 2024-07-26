@@ -2,8 +2,8 @@ import React from "react";
 import ServiciosIncluidosSocial from "../Components/SocialMedia/ServiciosIncluidosSocial";
 import GrowthHacking from "../Components/GrowthHacking/GrowthHacking";
 import publicity from "../assets/marketing-digital/publicity.webp";
-import '../Components/common/Efectos.css'; // Asegúrate de importar el archivo CSS correcto
-
+import "../Components/common/Efectos.css"; 
+import "../Components/GrowthHacking/GrowthHacking.css"; 
 const contenido = {
   subtitle: "Publicidad Digital",
   text: "En el  mundo de los negocios digitales, la visibilidad es clave, y eso es exactamente lo que ofrece nuestro servicio de publicidad digital: la oportunidad de destacarse, conectarse y prosperar en el vasto paisaje digital. Vivimos en una era donde la presencia en línea es clave para el éxito comercial, y es aquí donde entra en juego nuestra oferta de publicidad digital.",
@@ -20,8 +20,12 @@ const contenido = {
 
 const PublicidadDigitalPage = () => {
   return (
-    <div>
-      <i className="fa-solid fa-bolt rotating-icon positioned-icon"></i>
+    <div className="publicidad-digital-page">
+      <i className="fa-solid fa-bolt rotating-icon positioned-icon icon-1"></i>
+      <i className="fa-solid fa-bolt rotating-icon positioned-icon icon-2"></i>
+      <i className="fa-solid fa-bolt rotating-icon positioned-icon icon-3"></i>
+      <i className="fa-solid fa-bolt rotating-icon positioned-icon icon-4"></i>
+      <i className="fa-solid fa-bolt rotating-icon positioned-icon icon-5"></i>
       <GrowthHacking
         subtitle={contenido.subtitle}
         heading={contenido.heading}
