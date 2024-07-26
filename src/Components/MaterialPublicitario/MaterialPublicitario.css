@@ -1,0 +1,126 @@
+.material-publicitario-content {
+  margin: 0 auto;
+  padding: 40px;
+  position: relative;
+  max-width: 80%;
+}
+
+.next-btn,
+.back-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  padding: 15px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #eb5e25;
+  color: white;
+}
+
+.next-btn {
+  right: 0;
+  left: auto;
+}
+
+.back-btn {
+  left: 0;
+  right: auto;
+}
+
+.material-publicitario-slider-container {
+  overflow: hidden; /* Oculta el desbordamiento */
+  max-width: 90%; /* Fija el ancho del contenedor */
+  margin: 0 auto;
+}
+
+.material-publicitario-slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out; /* Efecto de deslizamiento */
+}
+
+.material-publicitario-slider.left {
+  transform: translateX(-100%);
+}
+
+.material-publicitario-slider.right {
+  transform: translateX(100%);
+}
+
+.cards-group {
+  display: flex;
+  min-width: 100%; /* Cada grupo ocupa el 100% del contenedor */
+
+  justify-content: center; /* Espacio entre las tarjetas */
+}
+
+.card-comercial {
+  width: 800px; /* Ajusta para dejar espacio para el margen */
+  height: 270px;
+  padding: 35px;
+  margin: 0 2.5%; /* Agrega margen a los lados */
+  background-color: white;
+  border-radius: 10px;
+}
+
+.card-comercial h3 {
+  text-align: center;
+}
+
+.card-comercial p {
+  margin: 10px 0;
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 1250px) {
+  .material-publicitario-slider-container {
+    background-color: red;
+    height: auto;
+  }
+  .card-comercial {
+    width: 70%; /* Ocupa casi todo el ancho del contenedor */
+    height: auto;
+    margin: 0 auto 20px; /* Centro y espacio inferior entre tarjetas */
+  }
+
+  .cards-group {
+    flex-direction: column; /* Alinear tarjetas en columna */
+    min-width: 100%; /* Cada tarjeta ocupa el 100% del contenedor */
+    align-items: center;
+    justify-items: center;
+  }
+}
+
+/* Estilos para la galería de imágenes */
+.image-gallery-material {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las imágenes se ajusten en varias filas si es necesario */
+  gap: 10px; /* Espacio entre las imágenes */
+  justify-content: center; /* Centra las imágenes en el contenedor */
+  height: 100%; /* Asegura que las imágenes ocupen todo el ancho */
+  align-items: center;
+}
+
+.image-gallery-material .imagenes-material {
+  width: 120px; /* Ajusta el tamaño de las imágenes */
+  height: 120px; /* Mantiene la proporción de las imágenes */
+  object-fit: cover; /* Mantiene la proporción de la imagen sin distorsionarla */
+  border-radius: 50%; /* Hace las imágenes circulares */
+  transition: none; /* Elimina cualquier transición */
+  cursor: pointer;
+}
+
+/* Añade estilos para listas desordenadas */
+.card-comercial ul {
+  padding: 20px; /* Alinea el texto de la lista */
+  list-style-type: disc; /* Usa círculos para la lista */
+  text-align: justify; /* Justifica el texto */
+}
+
+.card-comercial ul li {
+  margin-bottom: 10px; /* Espacio entre elementos de la lista */
+}
