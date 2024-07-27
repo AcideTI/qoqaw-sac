@@ -29,6 +29,14 @@
   gap: 5rem; /* Aumentar el gap entre columnas */
 }
 
+.growth-hacking-content.image-left {
+  flex-direction: row-reverse; /* Imagen a la izquierda, texto a la derecha */
+}
+
+.growth-hacking-content.image-right {
+  flex-direction: row; /* Imagen a la derecha, texto a la izquierda */
+}
+
 @media (max-width: 1250px) {
   .growth-hacking-content {
     display: block; /* Cambiar a diseño de bloque */
@@ -56,7 +64,6 @@
   justify-content: center;
   align-items: center;
   padding: 20px;
-  
 }
 
 .growth-hacking-img {
@@ -69,6 +76,47 @@
 .growth-hacking-img:hover {
   transform: scale(1.1);
 }
+
+.growth-hacking-video-container {
+  position: absolute;
+  top: 20px; /* Ajustar para considerar el padding */
+  left: 20px; /* Ajustar para considerar el padding */
+  right: 20px; /* Ajustar para considerar el padding */
+  bottom: 24px; /* Ajustar para considerar el padding */
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px; /* Bordes redondeados igual que la imagen */
+  overflow: hidden; /* Asegurar que el video se recorte dentro del contenedor */
+}
+
+.growth-hacking-video {
+  width: 100%;
+  object-fit: cover; /* Asegura que las imágenes se muestren completas dentro de las tarjetas */
+  height: 100%;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Transición suave */
+  opacity: 0;
+  
+}
+
+/* Nueva regla para pagina-web-page */
+.pagina-web-page .growth-hacking-img {
+  transition: opacity 0.5s ease-in-out; /* Transición suave para la opacidad */
+}
+
+.pagina-web-page .growth-hacking-image-container:hover .growth-hacking-img {
+  opacity: 0.8; /* Más opaca al hacer hover */
+}
+
+.pagina-web-page .growth-hacking-image-container:hover .growth-hacking-video {
+  opacity: 0.8; /* Mostrar parcialmente el video al hacer hover */
+  pointer-events: auto; /* Permitir la interacción con el video */
+}
+
+
+
+
+
+
 
 /* Branding Digital */
 .branding-digital-page-efecto .growth-hacking-image {

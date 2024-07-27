@@ -11,21 +11,25 @@ const ItemsPrograms = [
     img: tienda,
     alt: "Tiendas Virtuales",
     icon: "fa-solid fa-cart-shopping",
+    ref: "/servicios/tiendavirtual",
   },
   {
     img: web,
     alt: "Páginas Web",
     icon: "fa-solid fa-laptop-code",
+    ref: "/servicios/paginaweb",
   },
   {
     img: software,
     alt: "Software",
     icon: "fa-solid fa-code",
+    ref: "/servicios/software",
   },
   {
     img: erp,
     alt: "ERP",
     icon: "fa-solid fa-sitemap",
+    ref: "/servicios/erp",
   },
 ];
 

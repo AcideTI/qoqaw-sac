@@ -11,6 +11,11 @@ import GrowthHackingPage from "../pages/growthhacking";
 import PublicidadDigitalPage from "../pages/publicidaddigital";
 import BrandingDgitalPage from "../pages/brandingdigital";
 import MaterialPublicitarioPage from "../pages/materialpublicitario";
+import DisenioPackagingPage from "../pages/diseniopackaging";
+import PaginaWebPage from "../pages/paginaweb";
+import TiendasVirtualesPage from "../pages/tiendasvirtuales";
+import SoftwarePage from "../pages/software";
+import ErpPage from "../pages/erp";
 
 const RoutesPages = () => {
   return (
@@ -27,6 +32,11 @@ const RoutesPages = () => {
         <Route path="/servicios/publicidaddigital" element={<PublicidadDigitalPage />} />
         <Route path="/servicios/branding" element={<BrandingDgitalPage />} />
         <Route path="/servicios/materialpublicitario" element={<MaterialPublicitarioPage />} />
+        <Route path="/servicios/diseniopackaging" element={< DisenioPackagingPage/>} />
+        <Route path="/servicios/paginaweb" element={<PaginaWebPage />} />
+        <Route path="/servicios/tiendavirtual" element={<TiendasVirtualesPage />} />
+        <Route path="/servicios/software" element={<SoftwarePage />} />
+        <Route path="/servicios/erp" element={<ErpPage />} />
       </Routes>
   );
 };

@@ -24,6 +24,7 @@ const ItemsPrograms = [
     img: packaging,
     alt: "Packaging",
     icon: "fa-solid fa-box",
+    ref: "/servicios/diseniopackaging",
   },
   {
     img: identidad,
