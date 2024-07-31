@@ -48,7 +48,7 @@ const FormularioContacto = () => {
         </button>
       </form>
       {messageSent && (
-        <div className="overlay-branding">
+        <div className="overlay-contacto-inicio">
           <h1>¡Mensaje enviado con éxito!</h1>
           <h2>Gracias por contactarnos</h2>
         </div>

@@ -127,7 +127,7 @@ textarea::placeholder {
   overflow: hidden;
 }
 
-.overlay-branding {
+.overlay-contacto-inicio {
   position: absolute;
   top: 0;
   left: 0;
@@ -143,12 +143,12 @@ textarea::placeholder {
   opacity: 0;
   transform: translateY(100%);
 }
-.contacto-inicio-form .overlay-branding {
+.contacto-inicio-form .overlay-contacto-inicio {
   background: rgba(0, 0, 0, 0.8);
   color: #fff;
 }
 
-.contacto-container.mensaje-enviado .overlay-branding {
+.contacto-container.mensaje-enviado .overlay-contacto-inicio {
   animation: slideUp 0.8s forwards;
   animation-delay: 0.5s; /* Retarda la animación para el formulario */
 }
@@ -158,20 +158,20 @@ textarea::placeholder {
   
 }
 
-.overlay-branding h1 {
+.overlay-contacto-inicio h1 {
   font-size: 40px;
   margin-bottom: 30px;
   font-weight: 500;
 }
 
-.overlay-branding h2 {
+.overlay-contacto-inicio h2 {
   font-size: 30px;
   font-weight: 50;
   background: #eb5e25;
   color: white;
   padding: 0 45px;
 }
-.contacto-inicio-form .overlay-branding h2 {
+.contacto-inicio-form .overlay-contacto-inicio h2 {
   background: #fff;
   color: #000;
 }
