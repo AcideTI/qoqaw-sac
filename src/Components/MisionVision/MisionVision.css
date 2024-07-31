@@ -1,9 +1,13 @@
 .misionvision-container {
+  position: relative;
+  overflow: hidden;
+  max-width: 1200px;
+  height: 600px;
   display: grid;
   grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
-  max-width: 1200px;
   margin: 0 auto;
-  padding: 40px 0;
+  margin-bottom: 45px;
+  padding: 20px;
   opacity: 0; /* Inicialmente invisible */
   animation: fadeIn 2s forwards; /* Animación de desvanecimiento */
 }
@@ -12,6 +16,61 @@
   to {
     opacity: 1; /* Aparecer completamente */
   }
+}
+
+@media (max-width: 1000px) {
+  .misionvision-container {
+    grid-template-columns: 1fr; /* Una sola columna */
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    height: auto;
+    padding: 0 50px;
+    width: auto;
+  }
+  .misionvision-toggle-container {
+    display: none;
+  }
+  .misionvision-form {
+    padding: 0px;
+  }
+}
+
+.misionvision-container p {
+  font-size: 18px;
+  margin: 15px 0;
+  color: #5b5d63;
+  font-weight: 300;
+  text-align: justify;
+}
+
+.misionvision-container h1 {
+  margin-top: 10px;
+  font-size: 45px;
+  margin-bottom: 18px; /* Espacio entre el texto y las imágenes */
+  text-align: center;
+  color: #eb5e25;
+  font-weight: 450;
+}
+
+.misionvision-container h2 {
+  margin-top: 10px;
+  font-size: 45px;
+  margin-bottom: 10px; /* Espacio entre el texto y las imágenes */
+  text-align: center;
+  color: #eb5e25;
+  font-weight: 450;
+}
+
+.misionvision-container a {
+  color: #333;
+  font-size: 13px;
+  text-decoration: none;
+  margin: 15px 0 10px;
+}
+
+.misionvision-container button.misionvision-hidden {
+  background-color: transparent;
+  border-color: #fff;
 }
 
 .misionvision-column {
@@ -29,20 +88,81 @@
   font-weight: 450;
 }
 
-.misionvision-column h2 {
-  margin-top: 10px;
-  font-size: 35px;
-  margin-bottom: 10px; /* Espacio entre el texto y las imágenes */
-  text-align: center;
-  color: #eb5e25;
-  font-weight: 550;
+.misionvision-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px;
+  height: 100%;
 }
 
-.misionvision-container p {
-  margin-top: 20px;
-  font-size: 18px;
-  margin-bottom: 20px; /* Espacio entre el texto y las imágenes */
-  color: #5b5d63;
-  font-weight: 300;
-  text-align: justify;
+.misionvision-toggle-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  transition: all 0.6s ease-in-out;
+  border-radius: 150px 0 0 100px;
+}
+
+.misionvision-container.active .misionvision-toggle-container {
+  transform: translateX(-100%);
+  border-radius: 0 150px 100px 0;
+}
+
+.misionvision-toggle {
+  background: #eb5e25;
+
+  font-size: 25px;
+  font-weight: 100;
+  position: relative;
+  left: -100%;
+  height: 100%;
+  width: 200%;
+  transform: translateX(0);
+  transition: all 0.6s ease-in-out;
+  cursor: pointer;
+}
+.misionvision-toggle h1 {
+  font-weight: 100;
+  color: #fff;
+}
+
+.misionvision-container.active .misionvision-toggle {
+  transform: translateX(50%);
+  
+}
+
+.misionvision-toggle-panel {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  top: 0;
+  transform: translateX(0);
+  transition: all 0.6s ease-in-out;
+}
+
+.misionvision-toggle-left {
+  transform: translateX(-200%);
+}
+
+.misionvision-container.active .misionvision-toggle-left {
+  transform: translateX(0);
+}
+
+.misionvision-toggle-right {
+  right: 0;
+  transform: translateX(0);
+}
+
+.misionvision-container.active .misionvision-toggle-right {
+  transform: translateX(200%);
 }

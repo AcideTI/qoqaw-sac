@@ -6,6 +6,7 @@
   background: #ffffff;
 }
 
+
 .ubication-content {
   display: flex;
   flex-direction: row; 
@@ -20,6 +21,19 @@
   flex-direction: column;
   justify-content: center;
   line-height: 1.6; 
+}
+@media (max-width: 1000px) {
+  .ubication-content {
+    flex-direction: column;
+    padding: 30px;
+  }
+  .ubication-map{
+    width: 100%;
+  }
+  .map{
+    height: 400px;
+    width: 100%;
+  }
 }
 
 .ubication-map {

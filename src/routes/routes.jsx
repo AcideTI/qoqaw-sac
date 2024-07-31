@@ -16,6 +16,7 @@ import PaginaWebPage from "../pages/paginaweb";
 import TiendasVirtualesPage from "../pages/tiendasvirtuales";
 import SoftwarePage from "../pages/software";
 import ErpPage from "../pages/erp";
+import ManualIdentidadPage from "../pages/manualidentidad";
 
 const RoutesPages = () => {
   return (
@@ -37,6 +38,7 @@ const RoutesPages = () => {
         <Route path="/servicios/tiendavirtual" element={<TiendasVirtualesPage />} />
         <Route path="/servicios/software" element={<SoftwarePage />} />
         <Route path="/servicios/erp" element={<ErpPage />} />
+        <Route path="/servicios/manualidentidad" element={<ManualIdentidadPage/>}/>
       </Routes>
   );
 };

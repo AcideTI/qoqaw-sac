@@ -13,6 +13,11 @@ nav {
   height: 135px;
   justify-content: center; /* Asegura que los elementos estén centrados verticalmente */
 }
+@media (max-width: 1250px) {
+  .social-icons-contenedor{
+    display: none;
+  }
+}
 
 .logo {
   width: 190px;

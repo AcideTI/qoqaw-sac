@@ -19,6 +19,7 @@ const Ubication = () => {
         <div className="ubication-map">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019284634014!2d-71.53163745767083!3d-16.418172241969458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424b0b0b0b0b0b%3A0x0!2zMTbCsDI1JzA1LjQiUyA3McKwMzEnNTMuOSJX!5e0!3m2!1sen!2spe!4v1633029381234!5m2!1sen!2spe"
+            className="map"
             width="650"
             height="400"
             style={{ border: 0 }}

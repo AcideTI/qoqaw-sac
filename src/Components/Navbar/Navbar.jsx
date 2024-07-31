@@ -34,7 +34,9 @@ const Navbar = () => {
     <>
 
       <nav className="container">
+        <div className="social-icons-contenedor">
         <SocialMedia />
+        </div>
         <img src={logo} alt="Logo" className="logo" />
         <ul>
           {ItemsNavBar.map((item, index) => (

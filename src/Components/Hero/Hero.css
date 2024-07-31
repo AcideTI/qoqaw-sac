@@ -19,6 +19,13 @@
   height: 415px;
   margin: 30px auto;
 }
+@media (max-width: 768px) {
+  .form-container {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+  }
+}
 
 .form-group {
   margin-bottom: 15px;
