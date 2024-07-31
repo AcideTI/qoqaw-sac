@@ -1,15 +1,14 @@
 .hero {
   width: 100%;
   min-height: 800px;
-  background:
-    url("../../assets/hero1.webp");
+  background: url("../../assets/hero1.webp");
   background-size: cover;
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
+
 .form-container {
   background: #fff;
   padding: 20px;
@@ -18,7 +17,10 @@
   width: 606px;
   height: 415px;
   margin: 30px auto;
+  position: relative;
+  transition: transform 0.8s ease, opacity 0.8s ease;
 }
+
 @media (max-width: 768px) {
   .form-container {
     width: 100%;
@@ -35,7 +37,7 @@
 .form-group label {
   display: block;
   margin-bottom: 5px;
-  color: #4e5357; 
+  color: #4e5357;
 }
 
 .form-group input,
@@ -53,6 +55,7 @@
   resize: vertical;
   height: 100px;
 }
+
 .btn-contact {
   background: #ed8258;
   color: #fff;
@@ -67,24 +70,108 @@
   justify-content: center;
   height: 51px;
 }
+
 .btn-contact:hover {
   background: #000000;
 }
+
 .hero-text {
   text-align: center;
   max-width: 800px;
 }
+
 .hero-text h1 {
   font-size: 60px;
   font-weight: 600;
   color: #000000;
 }
+
 .hero-text p {
   max-width: 700px;
   margin: 10px auto 20px;
   line-height: 1.4;
 }
+
 input::placeholder,
 textarea::placeholder {
-  color: #a7aaac; 
+  color: #a7aaac;
+}
+
+/* Animación slideUp */
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Animación slideUp para el formulario */
+@keyframes slideUpForm {
+  from {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+/* Estilos para la superposición del mensaje de éxito */
+.contacto-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay-branding {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  opacity: 0;
+  transform: translateY(100%);
+}
+.contacto-inicio-form .overlay-branding {
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+}
+
+.contacto-container.mensaje-enviado .overlay-branding {
+  animation: slideUp 0.8s forwards;
+  animation-delay: 0.5s; /* Retarda la animación para el formulario */
+}
+
+.contacto-container.mensaje-enviado .formulario-contacto-efecto {
+  animation: slideUpForm 0.8s forwards;
+  
+}
+
+.overlay-branding h1 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+.overlay-branding h2 {
+  font-size: 30px;
+  font-weight: 50;
+  background: #eb5e25;
+  color: white;
+  padding: 0 45px;
+}
+.contacto-inicio-form .overlay-branding h2 {
+  background: #fff;
+  color: #000;
 }

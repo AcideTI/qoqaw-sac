@@ -1,6 +1,7 @@
 import React from 'react';
 import './ContactoInicio.css';
 import FormularioContacto from './FormularioContacto';
+import "../Hero/Hero.css";
 
 const ContactoInicio = () => {
   return (
