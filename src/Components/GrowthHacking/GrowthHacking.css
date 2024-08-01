@@ -95,8 +95,61 @@
   height: 100%;
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Transición suave */
   opacity: 0;
-  
 }
+
+.switch-container {
+  position: absolute;
+  top: -60px; /* Ajustar para posicionar el switch arriba de la imagen */
+  display: none; /* Ocultar por defecto */
+}
+
+.growth-hacking-image-container .switch-container {
+  margin-top: 25px;
+  display: flex; /* Mostrar cuando esté dentro del contenedor de la imagen */
+  width: 250px;
+  height: 55px;
+  background-color: #e0e0e0;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.switch {
+  width: 150px;
+  height: 55px;
+  background-color: #eb5e25;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  transition: transform 0.3s ease;
+  font-size: 25px;
+}
+
+.switch.ux {
+  transform: translateX(0);
+}
+
+.switch.ui {
+  transform: translateX(100px);
+}
+
+.disenio-ux-ui-page .growth-hacking-img {
+  margin-top: 25px;
+}
+/* Nueva clase para la animación de deslizamiento y desvanecimiento */
+.slide-in {
+  clip-path: inset(0 100% 0 0);
+  transition: clip-path 0.85s ease-in-out;
+}
+
+.slide-in.show {
+  clip-path: inset(0 -100% 0 0);
+}
+
+
 
 /* Nueva regla para pagina-web-page */
 .pagina-web-page .growth-hacking-img {
@@ -111,12 +164,6 @@
   opacity: 0.8; /* Mostrar parcialmente el video al hacer hover */
   pointer-events: auto; /* Permitir la interacción con el video */
 }
-
-
-
-
-
-
 
 /* Branding Digital */
 .branding-digital-page-efecto .growth-hacking-image {
@@ -139,7 +186,7 @@
   background: #57595b; /* Fondo negro */
   color: white; /* Color del texto */
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
   justify-content: center; /* Centrar verticalmente */
   transform: translateY(102%); /* Inicialmente oculta fuera de la vista */

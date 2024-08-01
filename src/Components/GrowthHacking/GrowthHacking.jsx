@@ -1,10 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './GrowthHacking.css';
 import Subtitle from '../common/Subtitle';
 import videobinario from '../../assets/binario.mp4';
 import code from '../../assets/code-video.mp4';
 
-const GrowthHacking = ({ subtitle, heading, text, image, overlay, overlayHeading, overlaySubheading, imagePosition = 'right', showOverlayVideoBinario, showOverlayVideoCode }) => {
+const GrowthHacking = ({ subtitle, heading, text, image, uiImage, overlay, overlayHeading, overlaySubheading, imagePosition = 'right', showOverlayVideoBinario, showOverlayVideoCode, switchAvailable }) => {
+  const [selectedOption, setSelectedOption] = useState('UX');
+  const [currentImage, setCurrentImage] = useState(image);
+
+  const handleSwitch = () => {
+    if (selectedOption === 'UX') {
+      setSelectedOption('UI');
+      setCurrentImage(uiImage);
+    } else {
+      setSelectedOption('UX');
+      setCurrentImage(image);
+    }
+  };
+
   return (
     <div className={`growth-hacking-container`}>
       <div className="growth-hacking-text">
@@ -16,8 +29,15 @@ const GrowthHacking = ({ subtitle, heading, text, image, overlay, overlayHeading
           <p dangerouslySetInnerHTML={{ __html: text }}></p>
         </div>
         <div className={`growth-hacking-image-container ${overlay ? 'overlay-enabled' : ''}`}>
+          {switchAvailable && (
+            <div className="switch-container" onClick={handleSwitch}>
+              <div className={`switch ${selectedOption === 'UX' ? 'ux' : 'ui'}`}>
+                {selectedOption === 'UX' ? 'Diseño UX' : 'Diseño UI'}
+              </div>
+            </div>
+          )}
           <div className="growth-hacking-image">
-            <img className="growth-hacking-img" src={image} alt="Growth Hacking" />
+            <img className="growth-hacking-img" src={currentImage} alt="Growth Hacking" />
             {(showOverlayVideoBinario || showOverlayVideoCode) && (
               <div className="growth-hacking-video-container">
                 <video className="growth-hacking-video" autoPlay muted loop>

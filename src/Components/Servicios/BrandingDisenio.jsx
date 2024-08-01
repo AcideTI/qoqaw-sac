@@ -36,6 +36,7 @@ const ItemsPrograms = [
     img: disenio,
     alt: "Diseño UX/UI",
     icon: "fa-solid fa-compass-drafting",
+    ref: "/servicios/diseniouxui",
   },
 ];
 

@@ -17,6 +17,7 @@ import TiendasVirtualesPage from "../pages/tiendasvirtuales";
 import SoftwarePage from "../pages/software";
 import ErpPage from "../pages/erp";
 import ManualIdentidadPage from "../pages/manualidentidad";
+import DisenioUXUIPage from "../pages/diseniouxui";
 
 const RoutesPages = () => {
   return (
@@ -39,6 +40,7 @@ const RoutesPages = () => {
         <Route path="/servicios/software" element={<SoftwarePage />} />
         <Route path="/servicios/erp" element={<ErpPage />} />
         <Route path="/servicios/manualidentidad" element={<ManualIdentidadPage/>}/>
+        <Route path="/servicios/diseniouxui" element={<DisenioUXUIPage />} />
       </Routes>
   );
 };
