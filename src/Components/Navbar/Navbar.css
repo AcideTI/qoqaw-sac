@@ -1,5 +1,7 @@
+/* Estilos base para la navbar */
 nav {
   width: 100vw;
+  height: 400px;
   background: #fff;
   color: #333;
   padding: 4px 0;
@@ -10,23 +12,32 @@ nav {
   flex-direction: column;
   align-items: center;
   z-index: 10;
-  height: 135px;
+  height: auto; /* Permite que la altura se ajuste automáticamente */
   justify-content: center; /* Asegura que los elementos estén centrados verticalmente */
+  transition: max-height 0.3s ease; /* Transición suave para el cambio de altura */
+  overflow: hidden; /* Oculta el contenido que desborde */
+  
 }
+
+/* Media query para ocultar los iconos sociales en pantallas más pequeñas */
 @media (max-width: 1250px) {
-  .social-icons-contenedor{
+  .social-icons-contenedor {
     display: none;
   }
 }
 
+/* Estilo para el logo */
 .logo {
   width: 190px;
 }
 
+/* Estilo para la lista de navegación */
 nav ul {
   padding: 0;
+  margin: 0;
 }
 
+/* Estilo para los elementos de la lista */
 nav ul li {
   display: inline-block;
   list-style: none;
@@ -34,28 +45,75 @@ nav ul li {
   font-size: 18px;
 }
 
+/* Estilo para los iconos sociales */
 .social-icons {
   position: absolute;
-  left: 270px; 
-  bottom: 25px; 
+  left: 270px;
+  bottom: 25px;
   display: flex;
   gap: 15px;
-  margin-left: 50px; 
+  margin-left: 50px;
 }
 
+/* Estilo para los enlaces de los iconos sociales */
 .social-icons a {
   color: black;
-  font-size: 1.3em; 
+  font-size: 1.3em;
   text-decoration: none;
 }
 
+/* Estilo para los enlaces de los iconos sociales en hover */
 .social-icons a:hover {
-  color: #eb5e25; 
+  color: #eb5e25;
 }
+
+/* Estilo para el enlace seleccionado */
 .link.selected {
   border-bottom: 1px solid #212121;
 }
+
+/* Estilo para el enlace en hover */
 .container li:hover {
   border-bottom: 1px solid #212121;
 }
 
+/* Ocultar el botón de hamburguesa por defecto */
+.hamburger {
+  display: none;
+  opacity: 0;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .social-icons-contenedor {
+    display: none;
+  }
+
+  nav {
+    max-height: 400px; /* Altura inicial más pequeña */
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .hamburger {
+    display: flex;
+    opacity: 1;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+  }
+
+  nav.expanded {
+    max-height: 500px; /* Altura máxima cuando el menú está expandido */
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+}

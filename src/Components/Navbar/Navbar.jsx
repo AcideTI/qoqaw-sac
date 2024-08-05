@@ -3,16 +3,16 @@ import "./Navbar.css";
 import logo from "../../assets/logo1.webp";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import SocialMedia from "./SocialMedia";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+
 const ItemsNavBar = [
   {
     name: "Inicio",
     path: "/",
   },
-
   {
     name: "Servicios",
-    path:"/servicios"
+    path: "/servicios",
   },
   {
     name: "Nosotros",
@@ -23,22 +23,47 @@ const ItemsNavBar = [
     path: "/contacto",
   },
 ];
+
 const Navbar = () => {
   const location = useLocation();
   const { pathname } = location;
+  const [menuOpen, setMenuOpen] = useState(false);
+
   useEffect(() => {
     // Top of the page
     window.scrollTo(0, 0);
   }, [pathname]);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+ const [heightNav, setHeightNav] = useState(false)
+  useEffect(() => {
+    const calculateHeight = () => {
+      const windowHeight = window.innerHeight;
+      console.log(windowHeight);
+      if (windowHeight > 200) {
+        setHeightNav(true);
+      }
+    };
+    window.addEventListener("resize", calculateHeight);
+    calculateHeight();
+    return () => window.removeEventListener("resize", calculateHeight);
+
+  }, []);
   return (
     <>
-
-      <nav className="container">
+      <nav className={`container ${menuOpen ? "expanded" : ""}`} style={{
+        position: heightNav ? "fixed" : "absolute",
+      }}>
         <div className="social-icons-contenedor">
-        <SocialMedia />
+          <SocialMedia />
         </div>
         <img src={logo} alt="Logo" className="logo" />
-        <ul>
+        <div className="hamburger" onClick={toggleMenu}>
+          <i className="fas fa-bars"></i>
+        </div>
+        <ul className={menuOpen ? "show" : ""}>
           {ItemsNavBar.map((item, index) => (
             <li key={index}>
               <Link
