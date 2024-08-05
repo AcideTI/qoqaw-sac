@@ -31,8 +31,32 @@
   .posicionamiento-seo-content {
     grid-template-columns: 1fr; /* Una sola columna */
     grid-template-rows: 1fr 1fr;
-    row-gap: 40px;
+    row-gap: 35px;
     justify-items: center;
+  }
+}
+@media (max-width: 768px) {
+  .posicionamiento-seo-container {
+    max-width: 768;
+  }
+  .posicionamiento-seo-content {
+    max-width: 700px;
+    padding: 2px;
+    row-gap: 15px;
+  }
+  .posicionamiento-seo-title h1{
+    font-size: 55px;
+  }
+  .posicionamiento-seo-image{
+    height: 100px;
+  }
+  .posicionamiento-seo-card{
+    width: 200px;
+    padding: 70px;
+  }
+  .posicionamiento-seo-text {
+    max-width: 300px;
+    margin: 40px;
   }
 }
 

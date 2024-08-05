@@ -2,7 +2,6 @@ import React from "react";
 import ServiciosIncluidosSocial from "../Components/SocialMedia/ServiciosIncluidosSocial";
 import GrowthHacking from "../Components/GrowthHacking/GrowthHacking";
 import publicity from "../assets/marketing-digital/publicity.webp";
-import "../Components/common/Efectos.css"; 
 import "../Components/GrowthHacking/GrowthHacking.css"; 
 const contenido = {
   subtitle: "Publicidad Digital",
@@ -21,11 +20,6 @@ const contenido = {
 const PublicidadDigitalPage = () => {
   return (
     <div className="publicidad-digital-page">
-      <i className="fa-solid fa-bolt rotating-icon positioned-icon icon-1"></i>
-      <i className="fa-solid fa-bolt rotating-icon positioned-icon icon-2"></i>
-      <i className="fa-solid fa-bolt rotating-icon positioned-icon icon-3"></i>
-      <i className="fa-solid fa-bolt rotating-icon positioned-icon icon-4"></i>
-      <i className="fa-solid fa-bolt rotating-icon positioned-icon icon-5"></i>
       <GrowthHacking
         subtitle={contenido.subtitle}
         heading={contenido.heading}

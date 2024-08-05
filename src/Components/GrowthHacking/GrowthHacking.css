@@ -149,8 +149,6 @@
   clip-path: inset(0 -100% 0 0);
 }
 
-
-
 /* Nueva regla para pagina-web-page */
 .pagina-web-page .growth-hacking-img {
   transition: opacity 0.5s ease-in-out; /* Transición suave para la opacidad */
@@ -225,4 +223,28 @@
 
 .publicidad-digital-page .growth-hacking-image img {
   pointer-events: auto; /* Reactiva los eventos del puntero para la imagen */
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(-7deg);
+  }
+  25% {
+    transform: rotate(-14deg);
+  }
+  50% {
+    transform: rotate(-7deg);
+  }
+  75% {
+    transform: rotate(-14deg);
+  }
+  100% {
+    transform: rotate(-7deg);
+  }
+}
+@media (max-width: 768px) {
+  .publicidad-digital-page .growth-hacking-image img {
+    margin-top: 20px;
+  }
 }

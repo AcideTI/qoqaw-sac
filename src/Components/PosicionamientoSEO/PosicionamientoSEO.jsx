@@ -6,7 +6,9 @@ import posicionamientoseo from '../../assets/posicionamientoseo/rocket.webp';
 const PosicionamientoSEO = () => {
   return (
     <div className="posicionamiento-seo-container">
+      <div className="posicionamiento-seo-title">
       <Subtitle text="Posicionamiento SEO" />
+      </div>
       <h2>¡POSICIONAMOS TU ÉXITO EN CADA BÚSQUEDA!</h2>
       <div className="posicionamiento-seo-content">
         <div className="posicionamiento-seo-text">

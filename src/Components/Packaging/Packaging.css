@@ -14,6 +14,11 @@
       justify-items: center; /* Centra los elementos en la cuadrícula */
     }
   }
+  @media (max-width: 768px) {
+    .packaging-grid-container{
+      padding: 20px;
+    }
+  }
   
   .packaging-image-card {
     position: relative; /* Necesario para posicionar el rectángulo */

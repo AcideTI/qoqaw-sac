@@ -16,19 +16,16 @@
     minmax(200px, 1fr)
   ); /* Columnas automáticas con un mínimo de 200px */
   gap: 2rem; /* Espacio entre columnas y filas */
-  padding: 2rem;
+  padding: 1rem;
   grid-auto-rows: auto; /* Altura automática de las filas */
 }
-
-@media (max-width: 1250px) {
-  .servicios-incluidos-grid {
-    grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
-    grid-template-rows: auto; /* Altura automática de las filas */
-    justify-items: center;
+@media (max-width: 768px) {
+  .servicios-incluidos-container {
+    margin: 0 auto;
   }
 }
 .servicio-item {
-  background: #ffffff; /* Degradado de blanco a #eb5e25 */
+  background: #ffffff;
   padding: 1rem;
   border-radius: 10px;
   height: 145px;
@@ -46,4 +43,3 @@
   background: #eb5e25; /* Degradado de blanco a #eb5e25 */
   color: #fff;
 }
-

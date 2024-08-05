@@ -1,8 +1,13 @@
 .video-background {
   position: relative;
-  width: 100%;
+  max-width: auto;
   height: 620px;
   overflow: hidden;
+}
+@media (max-width: 768px) {
+  .video-background {
+    max-width: 768px;
+  }
 }
 
 .video-content {

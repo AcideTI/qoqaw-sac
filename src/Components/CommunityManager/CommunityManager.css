@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 30px 0;
   text-align: center; /* Centrar el texto */
+  
 }
 
 .community-container-descripcion {
@@ -12,12 +13,25 @@
   margin-top: 30px;
 }
 @media (max-width: 900px) {
+
   .community-container-descripcion {
     grid-template-columns: 1fr; /* Una sola columna */
     grid-template-rows: 1fr 1fr;
     row-gap: 40px;
     justify-items: center;
     padding: 0 40px;
+  }
+}
+@media (max-width: 768px) {
+  .community-container h1{
+    font-size: 10px;
+  }
+  .community-container-descripcion {
+    max-width: 718px;
+    justify-content: center;
+  }
+  .community-image{
+    max-width:350px;
   }
 }
 
@@ -35,7 +49,7 @@
   
 }
 .community-container h1{
-    font-size: 80px;
+    font-size: 70px;
     font-weight: 600;
     color: #56585e;
 }

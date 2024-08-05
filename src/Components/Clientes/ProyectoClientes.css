@@ -13,7 +13,16 @@
 
 @media (width <= 1250px) {
   .image-grid {
-    grid-template-columns: 1fr 1fr; /* Una sola columna */
+    grid-template-columns: 1fr 1fr; /* dos columna */
+    grid-template-rows: 1fr 1fr;
+    row-gap: 40px;
+    justify-items: center;
+    padding: 0 35px;
+  }
+}
+@media (width <= 768px) {
+  .image-grid {
+    grid-template-columns: 1fr; /* dos columna */
     grid-template-rows: 1fr 1fr;
     row-gap: 40px;
     justify-items: center;

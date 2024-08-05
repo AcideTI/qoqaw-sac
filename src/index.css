@@ -52,6 +52,14 @@ a{
 .material-publictario-page .subtitle{
   font-size: 70px;
 }
+@media (max-width: 768px) {
+  .material-publictario-page .subtitle{
+    font-size: 55px;
+  }
+  .disenio-packaging-page .subtitle{
+    font-size: 55px;
+  }
+}
 .section-container{
   display: flex;
   gap: 40px;

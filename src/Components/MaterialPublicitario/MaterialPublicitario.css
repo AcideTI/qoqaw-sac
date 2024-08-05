@@ -36,6 +36,7 @@
   overflow: hidden; /* Oculta el desbordamiento */
   max-width: 90%; /* Fija el ancho del contenedor */
   margin: 0 auto;
+
 }
 
 .material-publicitario-slider {
@@ -54,13 +55,12 @@
 .cards-group {
   display: flex;
   min-width: 100%; /* Cada grupo ocupa el 100% del contenedor */
-
   justify-content: center; /* Espacio entre las tarjetas */
 }
 
 .card-comercial {
   width: 800px; /* Ajusta para dejar espacio para el margen */
-  height: 270px;
+  max-height: auto;
   padding: 35px;
   margin: 0 2.5%; /* Agrega margen a los lados */
   background-color: white;
@@ -78,8 +78,8 @@
 /* Media query para pantallas más pequeñas */
 @media (max-width: 1250px) {
   .material-publicitario-slider-container {
-    background-color: red;
     height: auto;
+    
   }
   .card-comercial {
     width: 70%; /* Ocupa casi todo el ancho del contenedor */
@@ -90,6 +90,29 @@
   .cards-group {
     flex-direction: column; /* Alinear tarjetas en columna */
     min-width: 100%; /* Cada tarjeta ocupa el 100% del contenedor */
+    align-items: center;
+    justify-items: center;
+  }
+}
+@media (max-width: 768px) {
+  .material-publicitario-content {
+    padding: 0 auto;
+    max-width: 768px;
+  }
+  .card-comercial {
+    width: 90%; /* Ocupa casi todo el ancho del contenedor */
+    height: auto;
+    margin: 0 auto 10px; /* Centro y espacio inferior entre tarjetas */
+  }
+  .next-btn,
+  .back-btn {
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+  }
+  .cards-group {
+    flex-direction: column; /* Alinear tarjetas en columna */
+    max-width: 100%; /* Cada tarjeta ocupa el 100% del contenedor */
     align-items: center;
     justify-items: center;
   }

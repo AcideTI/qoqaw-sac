@@ -19,6 +19,16 @@
     justify-items: center;
     padding: 0 35px;
   }
+
+}
+@media (max-width: 768px) {
+  .plan-community-grid {
+    grid-template-columns: 1fr; /* Una sola columna */
+    grid-template-rows: 1fr 1fr;
+    row-gap: 40px;
+    justify-items: center;
+    padding: 0 40px;
+  }
 }
 
 .plan-community-card {
@@ -76,12 +86,14 @@
   object-fit: cover; /* Asegura que las imágenes se muestren completas dentro de las tarjetas */
   transition: transform 0.8s ease; /* Transición suave para el efecto de subir */
   border-radius: 15px; /* Bordes redondeados */
+  position: absolute; /* Asegura que la imagen cubra todo el contenedor */
+  top: 0;
+  left: 0;
 }
 
 .plan-community-back-content h2 {
   font-weight: 500;
   margin-bottom: 10px;
-  
 }
 
 .plan-community-back-content h3 {
@@ -89,15 +101,15 @@
   font-weight: 600;
   margin-bottom: 5px;
 }
-.plan-community-back-content p{
-    font-size: 13px;
-    text-align: justify;
-    padding: 1px;
+.plan-community-back-content p {
+  font-size: 13px;
+  text-align: justify;
+  padding: 1px;
 }
-.plan-community-back-content li{
-    text-align: justify;
-    font-size: 13px;
+.plan-community-back-content li {
+  text-align: justify;
+  font-size: 13px;
 }
-.plan-community-back-content ul{
-    padding: 8px;
+.plan-community-back-content ul {
+  padding: 8px;
 }

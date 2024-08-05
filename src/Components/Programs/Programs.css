@@ -33,6 +33,7 @@
   opacity: 0;
   transform: translateY(40px);
   transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+  
 }
 
 .program.animate {
@@ -95,3 +96,15 @@
     justify-items: center;
   }
 }
+@media (max-width: 768px) {
+  .programs-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+  }
+  .programs {
+    padding: 0 2rem; /* Reducir el padding para pantallas pequeñas */
+  }
+}
+

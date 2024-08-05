@@ -42,7 +42,7 @@ const ProyectosClientes = () => {
       <Subtitle text="Proyectos de Clientes" />
       <div className="image-grid">
         {clientes.map((cliente, index) => (
-          <Link  to= "/"className="card" key={index}>
+          <Link  to= ""className="card" key={index}>
             <img src={cliente.src} alt={cliente.alt} />
             <div
               className="second-image"

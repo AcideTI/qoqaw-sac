@@ -12,7 +12,7 @@ const contenido = {
   items: [
     "Desarrollo de la identidad corporativa",
     "Desarrollo de marca",
-    "Análisis inicial (entrevistas personas clave, propuestas de valor, fortalezas y debilidad de marca)",
+    "Análisis inicial (entrevistas, propuestas de valor, fortalezas y debilidades)",
     "Naming",
     "Definicion de marca",
     "Diseño de logotipos",

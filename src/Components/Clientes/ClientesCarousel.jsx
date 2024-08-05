@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Cliente from "./Cliente";
 import "./ClientesCarousel.css";
 import cariluis from "../../assets/clientes/cariluis.webp";
@@ -58,8 +58,9 @@ const clientes = [
     description: "Tienda de ropa y accesorios",
   },
 ];
+
 const ClientesCarousel = () => {
-  const settings = {
+  const [settings, setSettings] = useState({
     dots: true,
     infinite: true,
     slidesToShow: 3,
@@ -68,24 +69,50 @@ const ClientesCarousel = () => {
     speed: 1000,
     autoplaySpeed: 2000,
     cssEase: "linear",
-  };
+    arrows: false,
+  });
+
+  useEffect(() => {
+    const updateSettings = () => {
+      if (window.matchMedia("(max-width: 768px)").matches) {
+        setSettings((prevSettings) => ({
+          ...prevSettings,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }));
+      } else {
+        setSettings((prevSettings) => ({
+          ...prevSettings,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        }));
+      }
+    };
+
+    updateSettings();
+    window.addEventListener("resize", updateSettings);
+
+    return () => {
+      window.removeEventListener("resize", updateSettings);
+    };
+  }, []);
+
   return (
     <div className="carrousel-section">
       <Subtitle text="Nuestros Clientes" />
       <div className="slider-carrousel">
-      <Slider {...settings}>
-        {clientes.map((cliente, index) => (
-          <Cliente
-            key={index}
-            img={cliente.img}
-            text={cliente.text}
-            alt={cliente.alt}
-            description={cliente.description}
-          />
-        ))}
-      </Slider>
+        <Slider {...settings}>
+          {clientes.map((cliente, index) => (
+            <Cliente
+              key={index}
+              img={cliente.img}
+              text={cliente.text}
+              alt={cliente.alt}
+              description={cliente.description}
+            />
+          ))}
+        </Slider>
       </div>
-
       <Link to="/proyectos" className="btn">Ver más</Link>
     </div>
   );
