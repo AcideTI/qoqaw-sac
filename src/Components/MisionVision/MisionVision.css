@@ -24,14 +24,14 @@
     grid-template-rows: 1fr 1fr;
     justify-items: center;
     height: auto;
-    padding: 0 50px;
+    padding: 0 30px;
     width: auto;
   }
   .misionvision-toggle-container {
     display: none;
   }
   .misionvision-form {
-    padding: 0px;
+    padding: 10px !important;
   }
 }
 

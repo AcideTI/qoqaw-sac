@@ -41,6 +41,7 @@
   .growth-hacking-content {
     display: block; /* Cambiar a diseño de bloque */
     text-align: center; /* Centrar el contenido */
+    padding: 0 40px;
   }
 
   .growth-hacking-text-content,
@@ -246,5 +247,15 @@
 @media (max-width: 768px) {
   .publicidad-digital-page .growth-hacking-image img {
     margin-top: 20px;
+  }
+  .growth-hacking-page .growth-hacking-image img{
+    height: auto;
+  }
+  .disenio-ux-ui-page .switch-container{
+    margin-top: 70px;
+  }
+  .disenio-ux-ui-page .growth-hacking-image img{
+    margin-top: 80px;
+    height: 280px;
   }
 }

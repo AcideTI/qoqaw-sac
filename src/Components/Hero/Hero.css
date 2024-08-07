@@ -34,6 +34,9 @@
   .form-group textarea{
     height: auto;
   }
+  .hero-text h1 {
+    color: #ffffff !important; 
+  }
 }
 
 .form-group {

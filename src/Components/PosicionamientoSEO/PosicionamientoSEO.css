@@ -41,7 +41,7 @@
   }
   .posicionamiento-seo-content {
     max-width: 700px;
-    padding: 2px;
+    
     row-gap: 15px;
   }
   .posicionamiento-seo-title h1{
@@ -51,8 +51,7 @@
     height: 100px;
   }
   .posicionamiento-seo-card{
-    width: 200px;
-    padding: 70px;
+    width: 350px !important;
   }
   .posicionamiento-seo-text {
     max-width: 300px;

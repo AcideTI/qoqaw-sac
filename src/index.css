@@ -38,10 +38,10 @@ a {
   border-bottom: 2px solid transparent;
 }
 .subtitle {
-  margin-top: 10px;
   font-size: 60px;
   margin-bottom: 20px; /* Espacio entre el texto y las imágenes */
   text-align: center;
+  justify-items: center;
   color: #eb5e25;
   font-weight: 500;
 }
@@ -53,6 +53,9 @@ a {
   font-size: 70px;
 }
 @media (max-width: 768px) {
+  .subtitle {
+    padding: 0 auto;
+  }
   .material-publictario-page .subtitle {
     font-size: 55px;
   }
@@ -65,5 +68,5 @@ a {
   gap: 40px;
 }
 .space-beetween {
-  margin-top: 70px;
+  padding: 80px 0;
 }

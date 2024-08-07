@@ -22,7 +22,7 @@ const contenido = {
 
 const GrowthHackingPage = () => {
   return (
-    <div>
+    <div className="growth-hacking-page">
       <GrowthHacking
         subtitle={contenido.subtitle}
         heading={contenido.heading}

@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   padding: 30px;
-  background: #ffffff;
+  background: #f5f5f5;
 }
 
 
@@ -25,7 +25,7 @@
 @media (max-width: 1000px) {
   .ubication-content {
     flex-direction: column;
-    padding: 30px;
+    padding: 0 45px;
   }
   .ubication-map{
     width: 100%;
