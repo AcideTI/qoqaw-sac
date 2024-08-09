@@ -7,7 +7,7 @@ const FormularioContacto = () => {
   const [errors, setErrors] = useState({});
 
   useEffect(() => {
-    const yearInput = document.getElementById('year');
+    const yearInput = document.getElementById("year");
     if (yearInput) {
       yearInput.value = new Date().getFullYear();
     }
@@ -39,27 +39,42 @@ const FormularioContacto = () => {
     }
 
     emailjs
-      .sendForm('service_q0kkmtd', 'template_gq0hv4z', form.current, 'Kpe9ELspeBx9V6e-A')
+      .sendForm(
+        "service_lfbk69q",
+        "template_exfflzh",
+        form.current,
+        "h9A2DAIkqGvL01Sn3"
+      )
       .then(
         () => {
           setMessageSent(true);
         },
         (error) => {
-          alert('Error al enviar el mensaje: ' + error.text);
+          alert("Error al enviar el mensaje: " + error.text);
         }
       );
   };
 
   return (
-    <div className={`contacto-container ${messageSent ? "mensaje-enviado" : "sin-enviar"}`}>
-      <form className="formulario-contacto-efecto" ref={form} onSubmit={sendEmail}>
+    <div
+      className={`contacto-container ${
+        messageSent ? "mensaje-enviado" : "sin-enviar"
+      }`}
+    >
+      <form
+        className="formulario-contacto-efecto"
+        ref={form}
+        onSubmit={sendEmail}
+      >
         <div className="form-group">
           <label htmlFor="from_name">Nombre</label>
           <input
             type="text"
             id="from_name"
             name="from_name"
-            placeholder={errors.from_name ? errors.from_name : "Ingrese su nombre aquí"}
+            placeholder={
+              errors.from_name ? errors.from_name : "Ingrese su nombre aquí"
+            }
             className={errors.from_name ? "input-error" : ""}
           />
         </div>
@@ -69,7 +84,11 @@ const FormularioContacto = () => {
             type="email"
             id="user_email"
             name="user_email"
-            placeholder={errors.user_email ? errors.user_email : "Ingrese su correo electrónico"}
+            placeholder={
+              errors.user_email
+                ? errors.user_email
+                : "Ingrese su correo electrónico"
+            }
             className={errors.user_email ? "input-error" : ""}
           />
         </div>
@@ -78,7 +97,9 @@ const FormularioContacto = () => {
           <textarea
             id="mensaje"
             name="mensaje"
-            placeholder={errors.mensaje ? errors.mensaje : "Ingrese su mensaje aquí"}
+            placeholder={
+              errors.mensaje ? errors.mensaje : "Ingrese su mensaje aquí"
+            }
             className={errors.mensaje ? "input-error" : ""}
           ></textarea>
         </div>
