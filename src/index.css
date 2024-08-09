@@ -54,7 +54,7 @@ a {
 }
 @media (max-width: 768px) {
   .subtitle {
-    padding: 0 auto;
+    font-size: 16vw !important; /* El tamaño de la fuente será el 5% del ancho de la ventana */
   }
   .material-publictario-page .subtitle {
     font-size: 55px;

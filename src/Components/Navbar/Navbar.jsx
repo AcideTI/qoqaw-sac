@@ -37,7 +37,12 @@ const Navbar = () => {
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
- const [heightNav, setHeightNav] = useState(false)
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
+  const [heightNav, setHeightNav] = useState(false);
   useEffect(() => {
     const calculateHeight = () => {
       const windowHeight = window.innerHeight;
@@ -49,13 +54,16 @@ const Navbar = () => {
     window.addEventListener("resize", calculateHeight);
     calculateHeight();
     return () => window.removeEventListener("resize", calculateHeight);
-
   }, []);
+
   return (
     <>
-      <nav className={`container ${menuOpen ? "expanded" : ""}`} style={{
-        position: heightNav ? "fixed" : "absolute",
-      }}>
+      <nav
+        className={`container ${menuOpen ? "expanded" : ""}`}
+        style={{
+          position: heightNav ? "fixed" : "absolute",
+        }}
+      >
         <div className="social-icons-contenedor">
           <SocialMedia />
         </div>
@@ -69,6 +77,7 @@ const Navbar = () => {
               <Link
                 to={item.path}
                 className={pathname === item.path ? "link selected" : ""}
+                onClick={closeMenu}
               >
                 {item.name}
               </Link>

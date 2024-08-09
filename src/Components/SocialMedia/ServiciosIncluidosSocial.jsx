@@ -7,7 +7,9 @@ const ServiciosIncluidosSocial = ({ items, columns }) => {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth <= 768) {
+      if (window.innerWidth <= 400) {
+        setCurrentColumns(1); // Ajustar a 1 columna para pantallas muy pequeñas
+      } else if (window.innerWidth <= 768) {
         setCurrentColumns(2); // Ajustar a 2 columnas para pantallas pequeñas
       } else {
         setCurrentColumns(columns); // Ajustar a columnas por defecto para pantallas grandes

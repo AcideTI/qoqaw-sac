@@ -25,7 +25,7 @@
 @media (max-width: 1000px) {
   .ubication-content {
     flex-direction: column;
-    padding: 0 45px;
+    padding: 0 auto;
   }
   .ubication-map{
     width: 100%;

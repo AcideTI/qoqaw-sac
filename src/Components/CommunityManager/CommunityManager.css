@@ -23,8 +23,11 @@
   }
 }
 @media (max-width: 768px) {
+  .community-container {
+    padding: 0 25px;
+  }
   .community-container h1{
-    font-size: 10px;
+    font-size: 16vw !important; /* El tamaño de la fuente será el 5% del ancho de la ventana */
   }
   .community-container-descripcion {
     max-width: 718px;
@@ -52,6 +55,7 @@
     font-size: 70px;
     font-weight: 600;
     color: #56585e;
+    margin-top: 10px;
 }
 .community-container h2{
     font-size: 25px;
