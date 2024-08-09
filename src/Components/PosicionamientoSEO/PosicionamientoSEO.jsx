@@ -1,13 +1,12 @@
 import React from 'react';
 import './PosicionamientoSEO.css';
-import Subtitle from '../common/Subtitle';
 import posicionamientoseo from '../../assets/posicionamientoseo/rocket.webp';
 
 const PosicionamientoSEO = () => {
   return (
     <div className="posicionamiento-seo-container">
       <div className="posicionamiento-seo-title">
-      <Subtitle text="Posicionamiento SEO" />
+      <h1>Posicionamiento SEO</h1>
       </div>
       <h2>¡POSICIONAMOS TU ÉXITO EN CADA BÚSQUEDA!</h2>
       <div className="posicionamiento-seo-content">

@@ -7,6 +7,15 @@
   max-width: 1200px;
   margin: 0 auto;
 }
+.posicionamiento-seo-container h1{
+  font-size: 60px;
+  margin-top:50px;
+  margin-bottom: 20px; /* Espacio entre el texto y las imágenes */
+  text-align: center;
+  justify-items: center;
+  color: #eb5e25;
+  font-weight: 500;
+}
 
 .posicionamiento-seo-container h2 {
   font-size: 25px;
@@ -46,7 +55,8 @@
     row-gap: 15px;
   }
   .posicionamiento-seo-title h1{
-    font-size: 50px;
+    padding: 0 25px !important;
+    font-size: 45px; 
   }
   .posicionamiento-seo-container h2{
     font-size: 20px;
