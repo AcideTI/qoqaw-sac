@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <div className='hero container'>
       <div className='hero-text'>
-        <h1>Contacto</h1>
+        <h1 className='cambio-color-h1'>Contacto</h1>
         <p>Conéctate con nosotros para potenciar tu marca <br /> y conectar efectivamente.</p>
         <div className='form-container'>
           <FormularioContacto />

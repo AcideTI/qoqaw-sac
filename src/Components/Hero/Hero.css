@@ -35,7 +35,7 @@
   .form-group textarea {
     height: auto;
   }
-  .hero-text h1 {
+  .hero-text .cambio-color-h1 {
     color: #ffffff !important;
   }
 }

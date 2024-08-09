@@ -39,7 +39,7 @@ const FormularioContacto = () => {
     }
 
     emailjs
-      .sendForm('service_lfbk69q', 'template_exfflzh', form.current, 'h9A2DAIkqGvL01Sn3')
+      .sendForm('service_q0kkmtd', 'template_gq0hv4z', form.current, 'Kpe9ELspeBx9V6e-A')
       .then(
         () => {
           setMessageSent(true);

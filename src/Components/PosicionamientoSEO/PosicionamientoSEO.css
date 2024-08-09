@@ -45,7 +45,10 @@
     row-gap: 15px;
   }
   .posicionamiento-seo-title h1{
-    font-size: 55px;
+    font-size: 50px;
+  }
+  .posicionamiento-seo-container h2{
+    font-size: 20px;
   }
   .posicionamiento-seo-image{
     height: 100px;
