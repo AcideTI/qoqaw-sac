@@ -249,7 +249,8 @@
     margin-top: 20px;
   }
   .growth-hacking-page .growth-hacking-image img{
-    height: auto;
+    margin-top: 10px;
+    height: 57vw;
   }
   .disenio-ux-ui-page .switch-container{
     margin-top: 70px;

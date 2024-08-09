@@ -1,5 +1,5 @@
 .social-media-container {
-  margin: 2rem 0;
+  margin: 1rem 0;
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -29,7 +29,7 @@
 }
 @media (max-width: 768px) {
   .social-media-container{
-    padding: 0 50px !important;
+    padding: 0 25px !important;
   }
   .social-media-columns {
     padding: 0px;
@@ -38,7 +38,7 @@
     padding: 0 25px;
   }
   .social-media-image {
-    height: 290px !important;
+    height: 70vw !important;
   }
   .social-media-right .icon {
     font-size: 2rem !important;

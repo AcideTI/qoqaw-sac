@@ -44,6 +44,7 @@ a {
   justify-items: center;
   color: #eb5e25;
   font-weight: 500;
+  margin-top: 30px;
 }
 .branding-digital-page .subtitle {
   color: #000000;
@@ -54,6 +55,7 @@ a {
 }
 @media (max-width: 768px) {
   .subtitle {
+    margin-top: 25px;
     font-size: 16vw !important; /* El tamaño de la fuente será el 5% del ancho de la ventana */
   }
   .material-publictario-page .subtitle {
@@ -68,5 +70,5 @@ a {
   gap: 40px;
 }
 .space-beetween {
-  padding: 80px 0;
+  padding: 50px 0;
 }

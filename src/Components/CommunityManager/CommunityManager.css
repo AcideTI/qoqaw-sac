@@ -34,7 +34,7 @@
     justify-content: center;
   }
   .community-image{
-    max-width:350px;
+    max-width: 90vw;
   }
 }
 
@@ -55,7 +55,7 @@
     font-size: 70px;
     font-weight: 600;
     color: #56585e;
-    margin-top: 10px;
+    margin-top: 40px;
 }
 .community-container h2{
     font-size: 25px;
