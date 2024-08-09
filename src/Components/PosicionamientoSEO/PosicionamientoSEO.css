@@ -38,6 +38,7 @@
 @media (max-width: 768px) {
   .posicionamiento-seo-container {
     max-width: 768;
+    padding: 0 25px !important;
   }
   .posicionamiento-seo-content {
     max-width: 700px;
