@@ -257,6 +257,9 @@
   }
   .disenio-ux-ui-page .growth-hacking-image img{
     margin-top: 80px;
-    height: 280px;
+    height: 50vw;
+  }
+  .disenio-packaging-page .growth-hacking-image img{
+    height: 65vw;
   }
 }

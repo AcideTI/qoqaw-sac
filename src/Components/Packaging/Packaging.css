@@ -1,72 +1,87 @@
 .packaging-grid-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px; /* Espacio entre las imágenes */
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px; /* Espacio entre las imágenes */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+@media (max-width: 1250px) {
+  .packaging-grid-container {
+    grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+    row-gap: 40px; /* Espacio entre las filas */
+    justify-items: center; /* Centra los elementos en la cuadrícula */
   }
-  
-  @media (max-width: 1250px) {
-    .packaging-grid-container {
-      grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
-      row-gap: 40px; /* Espacio entre las filas */
-      justify-items: center; /* Centra los elementos en la cuadrícula */
-    }
-  }
-  @media (max-width: 768px) {
-    .packaging-grid-container{
-      padding: 20px;
-    }
-  }
-  
-  .packaging-image-card {
-    position: relative; /* Necesario para posicionar el rectángulo */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden; /* Asegura que las imágenes no se salgan de la tarjeta */
-    border-radius: 50%; /* Hace que las imágenes sean circulares */
-  }
-  
-  .packaging-circular-image {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 1 / 1; /* Mantiene la proporción 1:1 */
-    border-radius: 50%; /* Hace que las imágenes sean circulares */
-    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsión */
-  }
-  
-  .packaging-hover-overlay {
-    position: absolute;
-    bottom: -100%; 
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.9); /* Fondo semi-transparente */
-    color: #f18d64;
-    text-align: center;
+}
+
+@media (max-width: 768px) {
+  .packaging-grid-container {
     padding: 20px;
-    transition: bottom 1.8s ease; /* Transición más lenta para bajar */
-    border-radius: 0 0 50% 50%; /* Hace que el overlay siga siendo circular */
   }
-  
-  .packaging-image-card:hover .packaging-hover-overlay {
-    transition: bottom 0.8s ease; /* Transición más rápida para subir */
-    bottom: 0; /* Sube el overlay */
-  }
-  
-  .packaging-image-card:not(:hover) .packaging-hover-overlay {
-    transition: bottom 1.8s ease; 
-    bottom: -100%; /* Baja el overlay */
-  }
-  
   .packaging-hover-overlay h3 {
-    margin: 0;
-    font-size: 16px;
+    font-size: 15vw;
   }
-  
   .packaging-hover-overlay p {
-    margin: 5px 0;
-    font-size: 14px;
-    color: #fff;
+    font-size: 10vw;
   }
+}
+
+@media (max-width: 400px) {
+  .packaging-hover-overlay {
+    padding: 10px; /* Ajustar el padding para pantallas pequeñas */
+    font-size: 12px; /* Ajustar el tamaño de fuente para pantallas pequeñas */
+    border-radius: 50%; /* Mantener la forma circular */
+  }
+}
+
+.packaging-image-card {
+  position: relative; /* Necesario para posicionar el rectángulo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Asegura que las imágenes no se salgan de la tarjeta */
+  border-radius: 50%; /* Hace que las imágenes sean circulares */
+}
+
+.packaging-circular-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1; /* Mantiene la proporción 1:1 */
+  border-radius: 50%; /* Hace que las imágenes sean circulares */
+  object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsión */
+}
+
+.packaging-hover-overlay {
+  position: absolute;
+  bottom: -100%; 
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.9); /* Fondo semi-transparente */
+  color: #f18d64;
+  text-align: center;
+  padding: 20px;
+  transition: bottom 1.8s ease; /* Transición más lenta para bajar */
+  border-radius: 0 0 50% 50%; /* Hace que el overlay siga siendo circular */
+}
+
+.packaging-image-card:hover .packaging-hover-overlay {
+  transition: bottom 0.8s ease; /* Transición más rápida para subir */
+  bottom: 0; /* Sube el overlay */
+}
+
+.packaging-image-card:not(:hover) .packaging-hover-overlay {
+  transition: bottom 1.8s ease; 
+  bottom: -150%; /* Baja el overlay */
+}
+
+.packaging-hover-overlay h3 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.packaging-hover-overlay p {
+  margin: 0;
+  font-size: 14px;
+  color: #fff;
+}

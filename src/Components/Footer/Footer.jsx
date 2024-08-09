@@ -51,10 +51,10 @@ const Footer = () => {
           <p className="footer-title">Resultados</p>
           <p>Transformamos ideas en resultados <br /> tangibles. Potenciamos tu marca.</p>
           <div className="footer-icons">
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.facebook.com/qoqawperu/" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-facebook-f"></i>
             </a>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/citeqoqaw.pe/" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-instagram"></i>
             </a>
             <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer">

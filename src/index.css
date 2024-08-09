@@ -53,16 +53,36 @@ a {
 .material-publictario-page .subtitle {
   font-size: 70px;
 }
+.disenio-packaging-page .subtitle{
+  margin-top: 90px;
+}
+.disenio-ux-ui-page .subtitle {
+  margin-top: 90px;
+}
+.social-media-container .subtitle{
+  margin-top: 60px;
+}
+.growth-hacking-container .subtitle {
+  margin-top: 90px;
+}
 @media (max-width: 768px) {
   .subtitle {
     margin-top: 25px;
     font-size: 16vw !important; /* El tamaño de la fuente será el 5% del ancho de la ventana */
   }
   .material-publictario-page .subtitle {
-    font-size: 55px;
+    font-size: 10vw !important;
+    margin-top: 45px;
   }
   .disenio-packaging-page .subtitle {
-    font-size: 55px;
+    margin-top: 45px !important;
+    font-size: 10vw !important;
+  }
+  .disenio-ux-ui-page .subtitle {
+    margin-top: 45px;
+  }
+  .growth-hacking-container .subtitle {
+    margin-top: 40px;
   }
 }
 .section-container {
