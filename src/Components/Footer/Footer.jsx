@@ -7,6 +7,7 @@ const Footer = () => {
   const form = useRef();
   const [messageSent, setMessageSent] = useState(false);
   const [inputMessage, setInputMessage] = useState('');
+  const [errors, setErrors] = useState({});
 
   useEffect(() => {
     const yearInput = document.getElementById('year');
@@ -15,8 +16,20 @@ const Footer = () => {
     }
   }, []);
 
+  const validateForm = () => {
+    const newErrors = {};
+    if (!form.current.user_email.value) {
+      newErrors.user_email = 'El correo electrónico es obligatorio';
+    }
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
   const sendEmail = (e) => {
     e.preventDefault();
+    if (!validateForm()) {
+      return;
+    }
 
     emailjs
       .sendForm('service_lfbk69q', 'template_w4lhfmp', form.current, 'h9A2DAIkqGvL01Sn3')
@@ -68,7 +81,8 @@ const Footer = () => {
               type="email"
               id="email"
               name="user_email"
-              placeholder="Ingrese su correo electrónico aquí"
+              placeholder={errors.user_email ? errors.user_email : "Ingrese su correo electrónico aquí"}
+              className={errors.user_email ? "input-error" : ""}
               value={inputMessage}
               onChange={(e) => setInputMessage(e.target.value)}
               disabled={messageSent}

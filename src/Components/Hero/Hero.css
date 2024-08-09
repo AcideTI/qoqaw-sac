@@ -1,3 +1,4 @@
+/* Hero.css */
 .hero {
   width: 100%;
   min-height: 800px;
@@ -27,15 +28,15 @@
     height: auto;
     padding: 15px;
   }
-  .form-group{
+  .form-group {
     height: auto;
     max-width: 700px;
   }
-  .form-group textarea{
+  .form-group textarea {
     height: auto;
   }
   .hero-text h1 {
-    color: #ffffff !important; 
+    color: #ffffff !important;
   }
 }
 
@@ -165,7 +166,6 @@ textarea::placeholder {
 
 .contacto-container.mensaje-enviado .formulario-contacto-efecto {
   animation: slideUpForm 0.8s forwards;
-  
 }
 
 .overlay-contacto-inicio h1 {
@@ -184,4 +184,8 @@ textarea::placeholder {
 .contacto-inicio-form .overlay-contacto-inicio h2 {
   background: #fff;
   color: #000;
+}
+.form-group input.input-error,
+.form-group textarea.input-error {
+  border-color: red !important;
 }

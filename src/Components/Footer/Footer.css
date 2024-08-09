@@ -86,6 +86,9 @@
 .footer-icons a:hover {
   color: #000000;
 }
-.footer-column p{
-    margin-bottom: 10px;
+.footer-column p {
+  margin-bottom: 10px;
+}
+.input-error {
+  border-color: red !important;
 }
