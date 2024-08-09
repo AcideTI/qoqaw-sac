@@ -51,8 +51,8 @@
   }
   .posicionamiento-seo-content {
     max-width: 700px;
-    
     row-gap: 15px;
+    padding: 0 !important;
   }
   .posicionamiento-seo-title h1{
     font-size: 45px; 
