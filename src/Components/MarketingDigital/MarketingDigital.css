@@ -26,7 +26,10 @@
   }
   .marketing-digital-image img {
     max-width: 350px;
-}
+  }
+  .marketing-digital-text h1 {
+    text-align: center;
+  }
 }
 
 .marketing-digital-text {

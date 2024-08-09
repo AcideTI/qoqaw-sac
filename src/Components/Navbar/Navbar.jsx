@@ -3,7 +3,7 @@ import "./Navbar.css";
 import logo from "../../assets/logo1.webp";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import SocialMedia from "./SocialMedia";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 const ItemsNavBar = [
   {
@@ -28,6 +28,7 @@ const Navbar = () => {
   const location = useLocation();
   const { pathname } = location;
   const [menuOpen, setMenuOpen] = useState(false);
+  const navRef = useRef(null);
 
   useEffect(() => {
     // Top of the page
@@ -41,6 +42,19 @@ const Navbar = () => {
   const closeMenu = () => {
     setMenuOpen(false);
   };
+
+  const handleClickOutside = (event) => {
+    if (navRef.current && !navRef.current.contains(event.target)) {
+      closeMenu();
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("click", handleClickOutside);
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
 
   const [heightNav, setHeightNav] = useState(false);
   useEffect(() => {
@@ -59,6 +73,7 @@ const Navbar = () => {
   return (
     <>
       <nav
+        ref={navRef}
         className={`container ${menuOpen ? "expanded" : ""}`}
         style={{
           position: heightNav ? "fixed" : "absolute",
