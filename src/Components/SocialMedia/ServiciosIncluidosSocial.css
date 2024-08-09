@@ -21,7 +21,7 @@
 }
 @media (max-width: 768px) {
   .servicios-incluidos-container {
-    margin: 0 auto;
+    margin: auto 10px;
   }
 }
 .servicio-item {
