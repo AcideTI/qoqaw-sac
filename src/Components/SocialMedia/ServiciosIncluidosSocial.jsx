@@ -3,7 +3,18 @@ import './ServiciosIncluidosSocial.css';
 import Subtitle from '../common/Subtitle';
 
 const ServiciosIncluidosSocial = ({ items, columns }) => {
-  const [currentColumns, setCurrentColumns] = useState(columns); // Número de columnas por defecto
+  // Inicializar currentColumns basado en el tamaño de la ventana
+  const getInitialColumns = () => {
+    if (window.innerWidth <= 400) {
+      return 1;
+    } else if (window.innerWidth > 400 && window.innerWidth <= 768) {
+      return 2;
+    } else {
+      return columns;
+    }
+  };
+
+  const [currentColumns, setCurrentColumns] = useState(getInitialColumns);
 
   useEffect(() => {
     const handleResize = () => {
